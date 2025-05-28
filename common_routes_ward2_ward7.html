@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9ad7416c4534e283d4423f13e514fe93 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9ad7416c4534e283d4423f13e514fe93" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9ad7416c4534e283d4423f13e514fe93 = L.map(
+                "map_9ad7416c4534e283d4423f13e514fe93",
+                {
+                    center: [38.9072, -77.0369],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e92c4a9dccbd4b10d534ac0d1eea853e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var poly_line_2d6a121339e425ec7a80511324fd2ed7 = L.polyline(
+                [[38.888255, -77.0494365], [38.879819, -77.037413]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_2d6a121339e425ec7a80511324fd2ed7.bindTooltip(
+                `<div>
+                     Lincoln Memorial → Jefferson Memorial (429 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_275570325c28f37da9fcac51f9ad3292 = L.marker(
+                [38.888255, -77.0494365],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_eaa121aa4f2bf5c3f7906d3ed4b37eff = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_275570325c28f37da9fcac51f9ad3292.setIcon(beautify_icon_eaa121aa4f2bf5c3f7906d3ed4b37eff);
+        
+    
+            marker_275570325c28f37da9fcac51f9ad3292.bindTooltip(
+                `<div>
+                     Lincoln Memorial
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8201be188665e2adc3354461b7d3b5c = L.marker(
+                [38.879819, -77.037413],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_b07ee200422926056cefd3bcc9baf307 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_c8201be188665e2adc3354461b7d3b5c.setIcon(beautify_icon_b07ee200422926056cefd3bcc9baf307);
+        
+    
+            marker_c8201be188665e2adc3354461b7d3b5c.bindTooltip(
+                `<div>
+                     Jefferson Memorial
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_039db94758641ec674ae8d547d510f5d = L.polyline(
+                [[38.915544, -77.038252], [38.90980062655191, -77.03442692756653]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_039db94758641ec674ae8d547d510f5d.bindTooltip(
+                `<div>
+                     New Hampshire Ave & T St NW → 15th & P St NW (394 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10d2cb34727ea69e7b6dada424a52b9d = L.marker(
+                [38.915544, -77.038252],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_4da6caafc784b98396d98d24779dde45 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_10d2cb34727ea69e7b6dada424a52b9d.setIcon(beautify_icon_4da6caafc784b98396d98d24779dde45);
+        
+    
+            marker_10d2cb34727ea69e7b6dada424a52b9d.bindTooltip(
+                `<div>
+                     New Hampshire Ave & T St NW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3227e42e98902d669f13e60fa6fcc4e0 = L.marker(
+                [38.90980062655191, -77.03442692756653],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_d659afb0f95a8c595933cfee24dd7388 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_3227e42e98902d669f13e60fa6fcc4e0.setIcon(beautify_icon_d659afb0f95a8c595933cfee24dd7388);
+        
+    
+            marker_3227e42e98902d669f13e60fa6fcc4e0.bindTooltip(
+                `<div>
+                     15th & P St NW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_726fe3ed2fc0615a0509c43b454164cf = L.polyline(
+                [[38.90980062655191, -77.03442692756653], [38.915544, -77.038252]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_726fe3ed2fc0615a0509c43b454164cf.bindTooltip(
+                `<div>
+                     15th & P St NW → New Hampshire Ave & T St NW (382 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cba9eb4191af94acc595878d666dbc92 = L.marker(
+                [38.90980062655191, -77.03442692756653],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_31749b78c4ff4f294d4815ccfaf5486f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_cba9eb4191af94acc595878d666dbc92.setIcon(beautify_icon_31749b78c4ff4f294d4815ccfaf5486f);
+        
+    
+            marker_cba9eb4191af94acc595878d666dbc92.bindTooltip(
+                `<div>
+                     15th & P St NW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d98a3c7d01f1ac24ba2dac35f6dee6e7 = L.marker(
+                [38.915544, -77.038252],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_272dc607bdd7637d63ba9d60d827f3a6 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_d98a3c7d01f1ac24ba2dac35f6dee6e7.setIcon(beautify_icon_272dc607bdd7637d63ba9d60d827f3a6);
+        
+    
+            marker_d98a3c7d01f1ac24ba2dac35f6dee6e7.bindTooltip(
+                `<div>
+                     New Hampshire Ave & T St NW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_601d2f7d20b834c13cd149ad1d0095ba = L.polyline(
+                [[38.8885525, -77.032427], [38.888255, -77.0494365]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_601d2f7d20b834c13cd149ad1d0095ba.bindTooltip(
+                `<div>
+                     Jefferson Dr & 14th St SW → Lincoln Memorial (350 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2362bac534e360ce47ad085cf11ca0b3 = L.marker(
+                [38.8885525, -77.032427],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_76e7ed49a74a00ff027c9aa948551885 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_2362bac534e360ce47ad085cf11ca0b3.setIcon(beautify_icon_76e7ed49a74a00ff027c9aa948551885);
+        
+    
+            marker_2362bac534e360ce47ad085cf11ca0b3.bindTooltip(
+                `<div>
+                     Jefferson Dr & 14th St SW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0710a1a24cb2584f4a578d1db092f40e = L.marker(
+                [38.888255, -77.0494365],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_d003325efd2e583132f856794a7a0386 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_0710a1a24cb2584f4a578d1db092f40e.setIcon(beautify_icon_d003325efd2e583132f856794a7a0386);
+        
+    
+            marker_0710a1a24cb2584f4a578d1db092f40e.bindTooltip(
+                `<div>
+                     Lincoln Memorial
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7b481d5148278deffaaeb8ec50d038cc = L.polyline(
+                [[38.888774, -77.028694], [38.888255, -77.0494365]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_7b481d5148278deffaaeb8ec50d038cc.bindTooltip(
+                `<div>
+                     Smithsonian-National Mall / Jefferson Dr & 12th St SW → Lincoln Memorial (339 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94301d5cc1ab582394e6dfa547b415a4 = L.marker(
+                [38.888774, -77.028694],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_e9c358044cb51f3461e3ae0b112c2be0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_94301d5cc1ab582394e6dfa547b415a4.setIcon(beautify_icon_e9c358044cb51f3461e3ae0b112c2be0);
+        
+    
+            marker_94301d5cc1ab582394e6dfa547b415a4.bindTooltip(
+                `<div>
+                     Smithsonian-National Mall / Jefferson Dr & 12th St SW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02ee75e566b35bcd8e2bbf05da59f51a = L.marker(
+                [38.888255, -77.0494365],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_f03a24bcebe735c8fbd2952b7e884be4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_02ee75e566b35bcd8e2bbf05da59f51a.setIcon(beautify_icon_f03a24bcebe735c8fbd2952b7e884be4);
+        
+    
+            marker_02ee75e566b35bcd8e2bbf05da59f51a.bindTooltip(
+                `<div>
+                     Lincoln Memorial
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bd0d51a636256052e6c8420b98401cc3 = L.polyline(
+                [[38.915544, -77.038252], [38.911268, -77.041829]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_bd0d51a636256052e6c8420b98401cc3.bindTooltip(
+                `<div>
+                     New Hampshire Ave & T St NW → 18th & New Hampshire Ave NW (326 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b478fa8f0ce5558fb7ac7dd12189c21 = L.marker(
+                [38.915544, -77.038252],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_7bcb48e1fddc5a236d81e45f56240dc1 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_6b478fa8f0ce5558fb7ac7dd12189c21.setIcon(beautify_icon_7bcb48e1fddc5a236d81e45f56240dc1);
+        
+    
+            marker_6b478fa8f0ce5558fb7ac7dd12189c21.bindTooltip(
+                `<div>
+                     New Hampshire Ave & T St NW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a82e2d218e4bee70ce97a019aa27a6c2 = L.marker(
+                [38.911268, -77.041829],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_a0c8c17d76861b42750c2715d70a09fd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_a82e2d218e4bee70ce97a019aa27a6c2.setIcon(beautify_icon_a0c8c17d76861b42750c2715d70a09fd);
+        
+    
+            marker_a82e2d218e4bee70ce97a019aa27a6c2.bindTooltip(
+                `<div>
+                     18th & New Hampshire Ave NW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3955903982e1512b8ba33f84a73b5372 = L.polyline(
+                [[38.915544, -77.038252], [38.90276, -77.03863]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_3955903982e1512b8ba33f84a73b5372.bindTooltip(
+                `<div>
+                     New Hampshire Ave & T St NW → 17th & K St NW (318 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fae16d5c76c1e90ae90fc876a0a7590 = L.marker(
+                [38.915544, -77.038252],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_6543b0c05704943a55a88391dda09d4f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_4fae16d5c76c1e90ae90fc876a0a7590.setIcon(beautify_icon_6543b0c05704943a55a88391dda09d4f);
+        
+    
+            marker_4fae16d5c76c1e90ae90fc876a0a7590.bindTooltip(
+                `<div>
+                     New Hampshire Ave & T St NW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f6add256fcf893db986ce1c0c1c35e0 = L.marker(
+                [38.90276, -77.03863],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_fddcd51c5f22479ec4685bc8cc3f6d05 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_3f6add256fcf893db986ce1c0c1c35e0.setIcon(beautify_icon_fddcd51c5f22479ec4685bc8cc3f6d05);
+        
+    
+            marker_3f6add256fcf893db986ce1c0c1c35e0.bindTooltip(
+                `<div>
+                     17th & K St NW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e0b84098d1547b8fcc9aeeeaf9ebcc02 = L.polyline(
+                [[38.879819, -77.037413], [38.888255, -77.0494365]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_e0b84098d1547b8fcc9aeeeaf9ebcc02.bindTooltip(
+                `<div>
+                     Jefferson Memorial → Lincoln Memorial (314 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6564cdb2a856e9a58a479186be00bd1 = L.marker(
+                [38.879819, -77.037413],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_2e8e720186dac46694a6d628629287a5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_b6564cdb2a856e9a58a479186be00bd1.setIcon(beautify_icon_2e8e720186dac46694a6d628629287a5);
+        
+    
+            marker_b6564cdb2a856e9a58a479186be00bd1.bindTooltip(
+                `<div>
+                     Jefferson Memorial
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a997854f6d18979e8d2988b3ff07dfd = L.marker(
+                [38.888255, -77.0494365],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_d456d19f0a8bdaf960488ec53e83a989 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_8a997854f6d18979e8d2988b3ff07dfd.setIcon(beautify_icon_d456d19f0a8bdaf960488ec53e83a989);
+        
+    
+            marker_8a997854f6d18979e8d2988b3ff07dfd.bindTooltip(
+                `<div>
+                     Lincoln Memorial
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4dcd2926cd7401e0eb916d8ee0391d6b = L.polyline(
+                [[38.888255, -77.0494365], [38.8885525, -77.032427]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_4dcd2926cd7401e0eb916d8ee0391d6b.bindTooltip(
+                `<div>
+                     Lincoln Memorial → Jefferson Dr & 14th St SW (285 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7d4c2c2b19c97aae8a3d0440fe82c1c = L.marker(
+                [38.888255, -77.0494365],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_fffffa44f7135cfaf6aa409af392fe3a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_b7d4c2c2b19c97aae8a3d0440fe82c1c.setIcon(beautify_icon_fffffa44f7135cfaf6aa409af392fe3a);
+        
+    
+            marker_b7d4c2c2b19c97aae8a3d0440fe82c1c.bindTooltip(
+                `<div>
+                     Lincoln Memorial
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7106d2311d665335c198f250412032f = L.marker(
+                [38.8885525, -77.032427],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_94c07a84610262d1cf6cd2901737253a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_e7106d2311d665335c198f250412032f.setIcon(beautify_icon_94c07a84610262d1cf6cd2901737253a);
+        
+    
+            marker_e7106d2311d665335c198f250412032f.bindTooltip(
+                `<div>
+                     Jefferson Dr & 14th St SW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2e3ae19196d2564b5eb9368b2771bc99 = L.polyline(
+                [[38.915544, -77.038252], [38.90571079190728, -77.0473176240921]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_2e3ae19196d2564b5eb9368b2771bc99.bindTooltip(
+                `<div>
+                     New Hampshire Ave & T St NW → New Hampshire Ave & Ward Pl NW (283 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8005420c96d705cd0344ae287afce259 = L.marker(
+                [38.915544, -77.038252],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_bae581d97d336211f6dedae92de87ecc = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_8005420c96d705cd0344ae287afce259.setIcon(beautify_icon_bae581d97d336211f6dedae92de87ecc);
+        
+    
+            marker_8005420c96d705cd0344ae287afce259.bindTooltip(
+                `<div>
+                     New Hampshire Ave & T St NW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49395cde10d2e1a0aa1bc5dd6ede53db = L.marker(
+                [38.90571079190728, -77.0473176240921],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_527cad040437700417eaf795a3b69ab0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "blue"}
+            )
+            marker_49395cde10d2e1a0aa1bc5dd6ede53db.setIcon(beautify_icon_527cad040437700417eaf795a3b69ab0);
+        
+    
+            marker_49395cde10d2e1a0aa1bc5dd6ede53db.bindTooltip(
+                `<div>
+                     New Hampshire Ave & Ward Pl NW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_777ebbfbaa8a70a9a3cbab4a65a997a9 = L.polyline(
+                [[38.889908, -76.983326], [38.8896, -76.9769]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_777ebbfbaa8a70a9a3cbab4a65a997a9.bindTooltip(
+                `<div>
+                     15th & East Capitol St NE → 19th & East Capitol St SE (163 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18047a8e29f875d404a62edec75b3ec0 = L.marker(
+                [38.889908, -76.983326],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_c2dc247acfbd4e09407878cc93082f63 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_18047a8e29f875d404a62edec75b3ec0.setIcon(beautify_icon_c2dc247acfbd4e09407878cc93082f63);
+        
+    
+            marker_18047a8e29f875d404a62edec75b3ec0.bindTooltip(
+                `<div>
+                     15th & East Capitol St NE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f59ac3c1a080295e7b193eb97a5f748 = L.marker(
+                [38.8896, -76.9769],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_59db899e5272306efcb8bd62edfcd08b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_3f59ac3c1a080295e7b193eb97a5f748.setIcon(beautify_icon_59db899e5272306efcb8bd62edfcd08b);
+        
+    
+            marker_3f59ac3c1a080295e7b193eb97a5f748.bindTooltip(
+                `<div>
+                     19th & East Capitol St SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b930d71b9564ea0383dd99a46299b3c3 = L.polyline(
+                [[38.897195, -76.983575], [38.89696, -77.00493]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_b930d71b9564ea0383dd99a46299b3c3.bindTooltip(
+                `<div>
+                     15th & F St NE → Columbus Circle / Union Station (152 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49e668b421e0c308fc13129b67121715 = L.marker(
+                [38.897195, -76.983575],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_3e16855d2fe59ff7c144e6c0ee7e8251 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_49e668b421e0c308fc13129b67121715.setIcon(beautify_icon_3e16855d2fe59ff7c144e6c0ee7e8251);
+        
+    
+            marker_49e668b421e0c308fc13129b67121715.bindTooltip(
+                `<div>
+                     15th & F St NE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8be7c0dd9b5381761fca304667c2e2e7 = L.marker(
+                [38.89696, -77.00493],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_d9fb6e7a7e78c2b9557ea84f6cad4b76 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_8be7c0dd9b5381761fca304667c2e2e7.setIcon(beautify_icon_d9fb6e7a7e78c2b9557ea84f6cad4b76);
+        
+    
+            marker_8be7c0dd9b5381761fca304667c2e2e7.bindTooltip(
+                `<div>
+                     Columbus Circle / Union Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_412624d1fecf13d943942b24ab71d157 = L.polyline(
+                [[38.88732, -76.983569], [38.88409514578027, -76.99523448944092]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_412624d1fecf13d943942b24ab71d157.bindTooltip(
+                `<div>
+                     15th St & Massachusetts Ave SE → Eastern Market Metro / Pennsylvania Ave & 8th St SE (135 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ea4c57998a4b6ab4c4a4e691a19bedd = L.marker(
+                [38.88732, -76.983569],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_708346ced4bfd2bea476b9320b7087d5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_4ea4c57998a4b6ab4c4a4e691a19bedd.setIcon(beautify_icon_708346ced4bfd2bea476b9320b7087d5);
+        
+    
+            marker_4ea4c57998a4b6ab4c4a4e691a19bedd.bindTooltip(
+                `<div>
+                     15th St & Massachusetts Ave SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_294c914445a761dcf22b425e36e65a9c = L.marker(
+                [38.88409514578027, -76.99523448944092],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_62be4b66033c6f429d3f6848755240f0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_294c914445a761dcf22b425e36e65a9c.setIcon(beautify_icon_62be4b66033c6f429d3f6848755240f0);
+        
+    
+            marker_294c914445a761dcf22b425e36e65a9c.bindTooltip(
+                `<div>
+                     Eastern Market Metro / Pennsylvania Ave & 8th St SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7bf7d63cd7a9b7e98e5b97dcdd21bcf2 = L.polyline(
+                [[38.8896, -76.9769], [38.894474, -76.974828]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_7bf7d63cd7a9b7e98e5b97dcdd21bcf2.bindTooltip(
+                `<div>
+                     19th & East Capitol St SE → Oklahoma Ave & D St NE (108 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd8e39c165849467620722734e89ceda = L.marker(
+                [38.8896, -76.9769],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_fc7ed622b5ebd85ea4190ed37f9b8440 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_cd8e39c165849467620722734e89ceda.setIcon(beautify_icon_fc7ed622b5ebd85ea4190ed37f9b8440);
+        
+    
+            marker_cd8e39c165849467620722734e89ceda.bindTooltip(
+                `<div>
+                     19th & East Capitol St SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbf2e7ab519d348c163aaf4caa38bcc8 = L.marker(
+                [38.894474, -76.974828],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_8e801302173dac72b6e9e6661e73307c = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_dbf2e7ab519d348c163aaf4caa38bcc8.setIcon(beautify_icon_8e801302173dac72b6e9e6661e73307c);
+        
+    
+            marker_dbf2e7ab519d348c163aaf4caa38bcc8.bindTooltip(
+                `<div>
+                     Oklahoma Ave & D St NE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6ea9b24f63b23d4ba1f41144cbff62ed = L.polyline(
+                [[38.894474, -76.974828], [38.8896, -76.9769]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_6ea9b24f63b23d4ba1f41144cbff62ed.bindTooltip(
+                `<div>
+                     Oklahoma Ave & D St NE → 19th & East Capitol St SE (94 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bce84da7e0019da2f4119ff6d2c4e3a2 = L.marker(
+                [38.894474, -76.974828],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_208ce4ee42358d56c5d0b4ab964ae7d5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_bce84da7e0019da2f4119ff6d2c4e3a2.setIcon(beautify_icon_208ce4ee42358d56c5d0b4ab964ae7d5);
+        
+    
+            marker_bce84da7e0019da2f4119ff6d2c4e3a2.bindTooltip(
+                `<div>
+                     Oklahoma Ave & D St NE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24f5f4aa83a6411ad5e2ff16699095cd = L.marker(
+                [38.8896, -76.9769],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_7e5800eadc398f37b744678f0c31bbe1 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_24f5f4aa83a6411ad5e2ff16699095cd.setIcon(beautify_icon_7e5800eadc398f37b744678f0c31bbe1);
+        
+    
+            marker_24f5f4aa83a6411ad5e2ff16699095cd.bindTooltip(
+                `<div>
+                     19th & East Capitol St SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8128e9e0785cd807effdde3755b21737 = L.polyline(
+                [[38.8896, -76.9769], [38.889908, -76.983326]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_8128e9e0785cd807effdde3755b21737.bindTooltip(
+                `<div>
+                     19th & East Capitol St SE → 15th & East Capitol St NE (93 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97cc1e185356d666724eeec1f8d07b6a = L.marker(
+                [38.8896, -76.9769],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_a4bfdf75c17f95bc9727cb97b40ceb93 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_97cc1e185356d666724eeec1f8d07b6a.setIcon(beautify_icon_a4bfdf75c17f95bc9727cb97b40ceb93);
+        
+    
+            marker_97cc1e185356d666724eeec1f8d07b6a.bindTooltip(
+                `<div>
+                     19th & East Capitol St SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d6f3a5409666268c2496a753e73b264 = L.marker(
+                [38.889908, -76.983326],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_c112ed0b97e25a41f009d6f3b2a74ea5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_4d6f3a5409666268c2496a753e73b264.setIcon(beautify_icon_c112ed0b97e25a41f009d6f3b2a74ea5);
+        
+    
+            marker_4d6f3a5409666268c2496a753e73b264.bindTooltip(
+                `<div>
+                     15th & East Capitol St NE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_44277959a13597dfab8844411b8f5d88 = L.polyline(
+                [[38.889908, -76.983326], [38.88409514578027, -76.99523448944092]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_44277959a13597dfab8844411b8f5d88.bindTooltip(
+                `<div>
+                     15th & East Capitol St NE → Eastern Market Metro / Pennsylvania Ave & 8th St SE (92 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd189a53603960c97c2e60b483f52629 = L.marker(
+                [38.889908, -76.983326],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_df02605ea515d1af22ddfe68087f6142 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_fd189a53603960c97c2e60b483f52629.setIcon(beautify_icon_df02605ea515d1af22ddfe68087f6142);
+        
+    
+            marker_fd189a53603960c97c2e60b483f52629.bindTooltip(
+                `<div>
+                     15th & East Capitol St NE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35f259aee4063dc03fb53731ee4f8ed0 = L.marker(
+                [38.88409514578027, -76.99523448944092],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_f5b916ad8f73d0d1595d0d10c60e05e8 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_35f259aee4063dc03fb53731ee4f8ed0.setIcon(beautify_icon_f5b916ad8f73d0d1595d0d10c60e05e8);
+        
+    
+            marker_35f259aee4063dc03fb53731ee4f8ed0.bindTooltip(
+                `<div>
+                     Eastern Market Metro / Pennsylvania Ave & 8th St SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_62c50bf1f8b22ff0de74ece20d73569d = L.polyline(
+                [[38.897195, -76.983575], [38.88409514578027, -76.99523448944092]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_62c50bf1f8b22ff0de74ece20d73569d.bindTooltip(
+                `<div>
+                     15th & F St NE → Eastern Market Metro / Pennsylvania Ave & 8th St SE (80 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_866ef117e9c4a56ccff021e160bbaac6 = L.marker(
+                [38.897195, -76.983575],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_25476ccba3787b30eb79a1eda385aa2d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_866ef117e9c4a56ccff021e160bbaac6.setIcon(beautify_icon_25476ccba3787b30eb79a1eda385aa2d);
+        
+    
+            marker_866ef117e9c4a56ccff021e160bbaac6.bindTooltip(
+                `<div>
+                     15th & F St NE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15dc52225eefa686895cf3e58833e056 = L.marker(
+                [38.88409514578027, -76.99523448944092],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_515f3f7bb94beac6dd1063ad42a6c8cb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_15dc52225eefa686895cf3e58833e056.setIcon(beautify_icon_515f3f7bb94beac6dd1063ad42a6c8cb);
+        
+    
+            marker_15dc52225eefa686895cf3e58833e056.bindTooltip(
+                `<div>
+                     Eastern Market Metro / Pennsylvania Ave & 8th St SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f98c7f378f496ffd1e7cb178d2a8684d = L.polyline(
+                [[38.897195, -76.983575], [38.886952, -76.996806]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_f98c7f378f496ffd1e7cb178d2a8684d.bindTooltip(
+                `<div>
+                     15th & F St NE → Eastern Market / 7th & North Carolina Ave SE (73 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_372bed582d547791110428f90751a346 = L.marker(
+                [38.897195, -76.983575],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_cb35cdf54ce3113ffdad24cd5ce2e0d3 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_372bed582d547791110428f90751a346.setIcon(beautify_icon_cb35cdf54ce3113ffdad24cd5ce2e0d3);
+        
+    
+            marker_372bed582d547791110428f90751a346.bindTooltip(
+                `<div>
+                     15th & F St NE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4233430d41b436590db24ff8393ffaaf = L.marker(
+                [38.886952, -76.996806],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_c35c0444b76c5a8a9a4d8da203854673 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_4233430d41b436590db24ff8393ffaaf.setIcon(beautify_icon_c35c0444b76c5a8a9a4d8da203854673);
+        
+    
+            marker_4233430d41b436590db24ff8393ffaaf.bindTooltip(
+                `<div>
+                     Eastern Market / 7th & North Carolina Ave SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9e80ade01341f0e7314772cb9de7dd6b = L.polyline(
+                [[38.889908, -76.983326], [38.886952, -76.996806]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            poly_line_9e80ade01341f0e7314772cb9de7dd6b.bindTooltip(
+                `<div>
+                     15th & East Capitol St NE → Eastern Market / 7th & North Carolina Ave SE (72 trips)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6f1550516f506bbfdcb4dfa59cbf942 = L.marker(
+                [38.889908, -76.983326],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_6e414b0dff51708e40d9bec92852c8bc = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "play", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_b6f1550516f506bbfdcb4dfa59cbf942.setIcon(beautify_icon_6e414b0dff51708e40d9bec92852c8bc);
+        
+    
+            marker_b6f1550516f506bbfdcb4dfa59cbf942.bindTooltip(
+                `<div>
+                     15th & East Capitol St NE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed17e66e0b98e859dbe9a3ca1fff3212 = L.marker(
+                [38.886952, -76.996806],
+                {}
+            ).addTo(map_9ad7416c4534e283d4423f13e514fe93);
+        
+    
+            var beautify_icon_81f228d7cccbda8f6cdcf2025e3b7d5a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "red", "borderWidth": 3, "icon": "stop", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "red"}
+            )
+            marker_ed17e66e0b98e859dbe9a3ca1fff3212.setIcon(beautify_icon_81f228d7cccbda8f6cdcf2025e3b7d5a);
+        
+    
+            marker_ed17e66e0b98e859dbe9a3ca1fff3212.bindTooltip(
+                `<div>
+                     Eastern Market / 7th & North Carolina Ave SE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

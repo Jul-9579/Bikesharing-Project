@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ff0103dce37df9678dac5f1c65fbeb23 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ff0103dce37df9678dac5f1c65fbeb23" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ff0103dce37df9678dac5f1c65fbeb23 = L.map(
+                "map_ff0103dce37df9678dac5f1c65fbeb23",
+                {
+                    center: [38.89511, -77.03637],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c3843ea87327f76f988291bc8a57155b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+            var poly_line_48c6d91a6769e48e9e92fc278a519457 = L.polyline(
+                [[38.888255, -77.0494365], [38.879819, -77.037413]],
+                {"bubblingMouseEvents": true, "color": "#800026", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#800026", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 10.0}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+            var poly_line_c0afc6f021659c82cd1e10989ba56b77 = L.polyline(
+                [[38.8885525, -77.032427], [38.888255, -77.049437]],
+                {"bubblingMouseEvents": true, "color": "#bc0026", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bc0026", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 9.385026737967914}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+            var poly_line_c928ba361349463a393b179eae4dc8b6 = L.polyline(
+                [[38.888774037, -77.028608084], [38.888255, -77.049437]],
+                {"bubblingMouseEvents": true, "color": "#c80723", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#c80723", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 9.206773618538325}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+            var poly_line_8fd45e8664c7fd3d6c3a44e32d74b6de = L.polyline(
+                [[38.915544, -77.038252], [38.90980062655191, -77.03442692756653]],
+                {"bubblingMouseEvents": true, "color": "#d9131e", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d9131e", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 8.9126559714795}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+            var poly_line_5ab239a74bfd99ec2b564c972b62e58e = L.polyline(
+                [[38.90980062655191, -77.03442692756653], [38.915544, -77.038252]],
+                {"bubblingMouseEvents": true, "color": "#de161d", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#de161d", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 8.832442067736185}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+            var poly_line_c2ed67139ced40e4b5f0485f35bdc580 = L.polyline(
+                [[38.879819, -77.037413], [38.888255, -77.049437]],
+                {"bubblingMouseEvents": true, "color": "#e9251f", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e9251f", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 8.609625668449198}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+            var poly_line_0a1dbbdc1c3695078d9caeae232b09a4 = L.polyline(
+                [[38.888255, -77.0494365], [38.8885525, -77.032427]],
+                {"bubblingMouseEvents": true, "color": "#ea271f", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ea271f", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 8.591800356506239}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+            var poly_line_afe2a8fb78864e158d415862254dadb6 = L.polyline(
+                [[38.888255, -77.0494365], [38.888774, -77.028694]],
+                {"bubblingMouseEvents": true, "color": "#f33b25", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f33b25", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 8.351158645276293}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+            var poly_line_2ce76d8ced10a6b83baffb2808e7989d = L.polyline(
+                [[38.915544, -77.038252], [38.911268, -77.041829]],
+                {"bubblingMouseEvents": true, "color": "#fc4e2a", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fc4e2a", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 8.128342245989305}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+            var poly_line_94857d4b1ea5149aaadc68ff601ce7b0 = L.polyline(
+                [[38.915544, -77.038252], [38.90276, -77.03863]],
+                {"bubblingMouseEvents": true, "color": "#fc4e2a", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fc4e2a", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 8.119429590017825}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+            var circle_marker_2a124b413182b71b6842293f5cb78db0 = L.circleMarker(
+                [38.82645412403157, -76.91146646347411],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_a7779d406c017471de27db94e9c9a85f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f5347840d78bbe36d8f6ad92d2d8dd9a = $(`<div id="html_f5347840d78bbe36d8f6ad92d2d8dd9a" style="width: 100.0%; height: 100.0%;"><strong>Branch Ave</strong><br><a href='https://www.wmata.com/rider-guide/stations/branch-ave.cfm'>Station Info</a></div>`)[0];
+                popup_a7779d406c017471de27db94e9c9a85f.setContent(html_f5347840d78bbe36d8f6ad92d2d8dd9a);
+            
+        
+
+        circle_marker_2a124b413182b71b6842293f5cb78db0.bindPopup(popup_a7779d406c017471de27db94e9c9a85f)
+        ;
+
+        
+    
+    
+            var circle_marker_963d6d35981f5a9ab40806f56b2c35be = L.circleMarker(
+                [38.81415143523843, -77.05366986331944],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_c27dc8cea5d9d67de2ffa2723036e0f4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_70e20f86a0af65545607a669570a16e5 = $(`<div id="html_70e20f86a0af65545607a669570a16e5" style="width: 100.0%; height: 100.0%;"><strong>Braddock Road</strong><br><a href='https://www.wmata.com/rider-guide/stations/braddock-rd.cfm'>Station Info</a></div>`)[0];
+                popup_c27dc8cea5d9d67de2ffa2723036e0f4.setContent(html_70e20f86a0af65545607a669570a16e5);
+            
+        
+
+        circle_marker_963d6d35981f5a9ab40806f56b2c35be.bindPopup(popup_c27dc8cea5d9d67de2ffa2723036e0f4)
+        ;
+
+        
+    
+    
+            var circle_marker_6526ab38bcc8b2c4867ca7559a4b1545 = L.circleMarker(
+                [38.806593883404894, -77.06081349956652],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_b5eadb8e7faa73fa14796dc52b1de35f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_117808e17896b6063e35507de52a2b1f = $(`<div id="html_117808e17896b6063e35507de52a2b1f" style="width: 100.0%; height: 100.0%;"><strong>King St-Old Town</strong><br><a href='https://www.wmata.com/rider-guide/stations/king-street.cfm'>Station Info</a></div>`)[0];
+                popup_b5eadb8e7faa73fa14796dc52b1de35f.setContent(html_117808e17896b6063e35507de52a2b1f);
+            
+        
+
+        circle_marker_6526ab38bcc8b2c4867ca7559a4b1545.bindPopup(popup_b5eadb8e7faa73fa14796dc52b1de35f)
+        ;
+
+        
+    
+    
+            var circle_marker_0736c6f249b5a2929b29f0ae558c428f = L.circleMarker(
+                [38.80043321423915, -77.07087668309177],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_1300d42a8bc67c2cf523321d60b02fbf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c48de0c519c2f0b7e823c3f82909d4c7 = $(`<div id="html_c48de0c519c2f0b7e823c3f82909d4c7" style="width: 100.0%; height: 100.0%;"><strong>Eisenhower Ave</strong><br><a href='https://www.wmata.com/rider-guide/stations/eisenhower-ave.cfm'>Station Info</a></div>`)[0];
+                popup_1300d42a8bc67c2cf523321d60b02fbf.setContent(html_c48de0c519c2f0b7e823c3f82909d4c7);
+            
+        
+
+        circle_marker_0736c6f249b5a2929b29f0ae558c428f.bindPopup(popup_1300d42a8bc67c2cf523321d60b02fbf)
+        ;
+
+        
+    
+    
+            var circle_marker_0fc8c641becf783895e60e67efd6fdf1 = L.circleMarker(
+                [38.79392361596811, -77.07520808387842],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_669c731e9e3fead64993aeced773e008 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0ed855c52e0836cfd08f227837988b96 = $(`<div id="html_0ed855c52e0836cfd08f227837988b96" style="width: 100.0%; height: 100.0%;"><strong>Huntington</strong><br><a href='https://www.wmata.com/rider-guide/stations/huntington.cfm'>Station Info</a></div>`)[0];
+                popup_669c731e9e3fead64993aeced773e008.setContent(html_0ed855c52e0836cfd08f227837988b96);
+            
+        
+
+        circle_marker_0fc8c641becf783895e60e67efd6fdf1.bindPopup(popup_669c731e9e3fead64993aeced773e008)
+        ;
+
+        
+    
+    
+            var circle_marker_8649477b67cbe96895322d3e5080f8dc = L.circleMarker(
+                [38.86297089677661, -76.9953730128321],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_8ac2b41eb76be8d3fdb5eec809c2140d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8ecf75a820f1b443827936b7db7db8d0 = $(`<div id="html_8ecf75a820f1b443827936b7db7db8d0" style="width: 100.0%; height: 100.0%;"><strong>Anacostia</strong><br><a href='https://www.wmata.com/rider-guide/stations/anacostia.cfm'>Station Info</a></div>`)[0];
+                popup_8ac2b41eb76be8d3fdb5eec809c2140d.setContent(html_8ecf75a820f1b443827936b7db7db8d0);
+            
+        
+
+        circle_marker_8649477b67cbe96895322d3e5080f8dc.bindPopup(popup_8ac2b41eb76be8d3fdb5eec809c2140d)
+        ;
+
+        
+    
+    
+            var circle_marker_6f1418c6fd9b1d92b103baa05d8adbd5 = L.circleMarker(
+                [38.88463004516522, -76.99600340230812],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_45b1f5c5acc1268198338f7bf5572be4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_83892435072e10e0f1759bcfaebd204a = $(`<div id="html_83892435072e10e0f1759bcfaebd204a" style="width: 100.0%; height: 100.0%;"><strong>Eastern Market</strong><br><a href='https://www.wmata.com/rider-guide/stations/eastern-market.cfm'>Station Info</a></div>`)[0];
+                popup_45b1f5c5acc1268198338f7bf5572be4.setContent(html_83892435072e10e0f1759bcfaebd204a);
+            
+        
+
+        circle_marker_6f1418c6fd9b1d92b103baa05d8adbd5.bindPopup(popup_45b1f5c5acc1268198338f7bf5572be4)
+        ;
+
+        
+    
+    
+            var circle_marker_cb820636e3914726e4c207389504cad9 = L.circleMarker(
+                [38.88127105766857, -76.9854975917707],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_a3dc82f09568351e7e98bc7298a85845 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0b5eda3835f91a3302f1af3717688722 = $(`<div id="html_0b5eda3835f91a3302f1af3717688722" style="width: 100.0%; height: 100.0%;"><strong>Potomac Ave</strong><br><a href='https://www.wmata.com/rider-guide/stations/potomac-ave.cfm'>Station Info</a></div>`)[0];
+                popup_a3dc82f09568351e7e98bc7298a85845.setContent(html_0b5eda3835f91a3302f1af3717688722);
+            
+        
+
+        circle_marker_cb820636e3914726e4c207389504cad9.bindPopup(popup_a3dc82f09568351e7e98bc7298a85845)
+        ;
+
+        
+    
+    
+            var circle_marker_ac5dc1f5012d7eac1ffa81bc055023ed = L.circleMarker(
+                [38.88671687528953, -76.97709117127123],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_8abe48984b7b83e9f7556be5342b5c21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9b1a9846de0e7b14816d26f210ba834e = $(`<div id="html_9b1a9846de0e7b14816d26f210ba834e" style="width: 100.0%; height: 100.0%;"><strong>Stadium-Armory</strong><br><a href='https://www.wmata.com/rider-guide/stations/stadium-armory.cfm'>Station Info</a></div>`)[0];
+                popup_8abe48984b7b83e9f7556be5342b5c21.setContent(html_9b1a9846de0e7b14816d26f210ba834e);
+            
+        
+
+        circle_marker_ac5dc1f5012d7eac1ffa81bc055023ed.bindPopup(popup_8abe48984b7b83e9f7556be5342b5c21)
+        ;
+
+        
+    
+    
+            var circle_marker_7ef001e1d848985358126fb0dc5d3542 = L.circleMarker(
+                [38.92106748085953, -76.99593919445644],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_c8ce15b55dcf55e2469a8d2832868527 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_51657aa3a6e0753d12438990b7d09a63 = $(`<div id="html_51657aa3a6e0753d12438990b7d09a63" style="width: 100.0%; height: 100.0%;"><strong>Rhode Island Ave-Brentwood</strong><br><a href='https://www.wmata.com/rider-guide/stations/rhode-island-ave.cfm'>Station Info</a></div>`)[0];
+                popup_c8ce15b55dcf55e2469a8d2832868527.setContent(html_51657aa3a6e0753d12438990b7d09a63);
+            
+        
+
+        circle_marker_7ef001e1d848985358126fb0dc5d3542.bindPopup(popup_c8ce15b55dcf55e2469a8d2832868527)
+        ;
+
+        
+    
+    
+            var circle_marker_46daa3fe8dfdecd46a32d7e5e4d75c84 = L.circleMarker(
+                [38.89919901218131, -76.9467499947779],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_c1d78c76172f002a2528763512538e2a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a8ff8de90238541d4bfc37cba69d9e24 = $(`<div id="html_a8ff8de90238541d4bfc37cba69d9e24" style="width: 100.0%; height: 100.0%;"><strong>Minnesota Ave</strong><br><a href='https://www.wmata.com/rider-guide/stations/minnesota-ave.cfm'>Station Info</a></div>`)[0];
+                popup_c1d78c76172f002a2528763512538e2a.setContent(html_a8ff8de90238541d4bfc37cba69d9e24);
+            
+        
+
+        circle_marker_46daa3fe8dfdecd46a32d7e5e4d75c84.bindPopup(popup_c1d78c76172f002a2528763512538e2a)
+        ;
+
+        
+    
+    
+            var circle_marker_c390fb8f203918ebe824f1fcf1c55b5c = L.circleMarker(
+                [38.94327308196991, -77.06298848055067],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_1864704926ff19cfa87557b21ce7f728 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f1c9002c35b4d598bdc5696e0d4a6308 = $(`<div id="html_f1c9002c35b4d598bdc5696e0d4a6308" style="width: 100.0%; height: 100.0%;"><strong>Van Ness-UDC</strong><br><a href='https://www.wmata.com/rider-guide/stations/van-ness.cfm'>Station Info</a></div>`)[0];
+                popup_1864704926ff19cfa87557b21ce7f728.setContent(html_f1c9002c35b4d598bdc5696e0d4a6308);
+            
+        
+
+        circle_marker_c390fb8f203918ebe824f1fcf1c55b5c.bindPopup(popup_1864704926ff19cfa87557b21ce7f728)
+        ;
+
+        
+    
+    
+            var circle_marker_e160062a7787dcc132ea0442113dac78 = L.circleMarker(
+                [38.934770682924885, -77.05804481710518],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_0c2394521283229e58223c9a1bb39d2b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6a59c64a7e072ba65bb8b9cc966e3cf0 = $(`<div id="html_6a59c64a7e072ba65bb8b9cc966e3cf0" style="width: 100.0%; height: 100.0%;"><strong>Cleveland Park</strong><br><a href='https://www.wmata.com/rider-guide/stations/cleveland-park.cfm'>Station Info</a></div>`)[0];
+                popup_0c2394521283229e58223c9a1bb39d2b.setContent(html_6a59c64a7e072ba65bb8b9cc966e3cf0);
+            
+        
+
+        circle_marker_e160062a7787dcc132ea0442113dac78.bindPopup(popup_0c2394521283229e58223c9a1bb39d2b)
+        ;
+
+        
+    
+    
+            var circle_marker_4acfa8795e02ebfbabddbbfe50cfec04 = L.circleMarker(
+                [38.92784575919845, -77.03255440732187],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_bb9a8fd1be91c3fde8495647b1f1f4db = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_22cb000c549e448afb1b128ac637ce83 = $(`<div id="html_22cb000c549e448afb1b128ac637ce83" style="width: 100.0%; height: 100.0%;"><strong>Columbia Heights</strong><br><a href='https://www.wmata.com/rider-guide/stations/columbia-hghts.cfm'>Station Info</a></div>`)[0];
+                popup_bb9a8fd1be91c3fde8495647b1f1f4db.setContent(html_22cb000c549e448afb1b128ac637ce83);
+            
+        
+
+        circle_marker_4acfa8795e02ebfbabddbbfe50cfec04.bindPopup(popup_bb9a8fd1be91c3fde8495647b1f1f4db)
+        ;
+
+        
+    
+    
+            var circle_marker_9ca67c8df9bfb40096c71b2603828ff6 = L.circleMarker(
+                [38.928959627656745, -77.24156035171244],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_78bc981ef3748728ec302467e8742f5e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a70ea03deabdd0f39d5df3896a55d449 = $(`<div id="html_a70ea03deabdd0f39d5df3896a55d449" style="width: 100.0%; height: 100.0%;"><strong>Spring Hill</strong><br><a href='https://www.wmata.com/rider-guide/stations/spring-hill.cfm'>Station Info</a></div>`)[0];
+                popup_78bc981ef3748728ec302467e8742f5e.setContent(html_a70ea03deabdd0f39d5df3896a55d449);
+            
+        
+
+        circle_marker_9ca67c8df9bfb40096c71b2603828ff6.bindPopup(popup_78bc981ef3748728ec302467e8742f5e)
+        ;
+
+        
+    
+    
+            var circle_marker_6abf840d37c02fd3c6e11b4ce6c35e38 = L.circleMarker(
+                [38.92096317905126, -77.233880199548],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_a17ffdaf129d30db393351eb07e36f16 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a55379e26a5bbd1b874120b275c4517d = $(`<div id="html_a55379e26a5bbd1b874120b275c4517d" style="width: 100.0%; height: 100.0%;"><strong>Greensboro</strong><br><a href='https://www.wmata.com/rider-guide/stations/greensboro.cfm'>Station Info</a></div>`)[0];
+                popup_a17ffdaf129d30db393351eb07e36f16.setContent(html_a55379e26a5bbd1b874120b275c4517d);
+            
+        
+
+        circle_marker_6abf840d37c02fd3c6e11b4ce6c35e38.bindPopup(popup_a17ffdaf129d30db393351eb07e36f16)
+        ;
+
+        
+    
+    
+            var circle_marker_76b3a41f0cd67b3b011eec96d64940b1 = L.circleMarker(
+                [38.92068205405081, -77.2217180330483],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_7feb0df70c14121a781c7fd2ee7c31fc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_448ac63cfaa2e157597a5c4e3dad006d = $(`<div id="html_448ac63cfaa2e157597a5c4e3dad006d" style="width: 100.0%; height: 100.0%;"><strong>Tysons</strong><br><a href='https://www.wmata.com/rider-guide/stations/tysons.cfm'>Station Info</a></div>`)[0];
+                popup_7feb0df70c14121a781c7fd2ee7c31fc.setContent(html_448ac63cfaa2e157597a5c4e3dad006d);
+            
+        
+
+        circle_marker_76b3a41f0cd67b3b011eec96d64940b1.bindPopup(popup_7feb0df70c14121a781c7fd2ee7c31fc)
+        ;
+
+        
+    
+    
+            var circle_marker_6804a170f37431e2d979302bbd5e0689 = L.circleMarker(
+                [38.92452955166994, -77.21008129320533],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_53b5ea654a30116204e2c347d655ec73 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eae0e73518d85c2afa50a21a37e6826b = $(`<div id="html_eae0e73518d85c2afa50a21a37e6826b" style="width: 100.0%; height: 100.0%;"><strong>McLean</strong><br><a href='https://www.wmata.com/rider-guide/stations/mclean.cfm'>Station Info</a></div>`)[0];
+                popup_53b5ea654a30116204e2c347d655ec73.setContent(html_eae0e73518d85c2afa50a21a37e6826b);
+            
+        
+
+        circle_marker_6804a170f37431e2d979302bbd5e0689.bindPopup(popup_53b5ea654a30116204e2c347d655ec73)
+        ;
+
+        
+    
+    
+            var circle_marker_5d24c743041319d8601ee045d9105a74 = L.circleMarker(
+                [38.94779265750592, -76.87184352730777],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_230f71368e4d66b955b2141b3b974dd4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_70db72aec052289dec492964746a55f3 = $(`<div id="html_70db72aec052289dec492964746a55f3" style="width: 100.0%; height: 100.0%;"><strong>New Carrollton</strong><br><a href='https://www.wmata.com/rider-guide/stations/new-carrollton.cfm'>Station Info</a></div>`)[0];
+                popup_230f71368e4d66b955b2141b3b974dd4.setContent(html_70db72aec052289dec492964746a55f3);
+            
+        
+
+        circle_marker_5d24c743041319d8601ee045d9105a74.bindPopup(popup_230f71368e4d66b955b2141b3b974dd4)
+        ;
+
+        
+    
+    
+            var circle_marker_cb422f8df824708daa5506c15c41bf1a = L.circleMarker(
+                [38.93351403252956, -76.89120021352524],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_f704270ce9d2ed1195b9abf797221a60 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7d1fcef09c13dc51329c1b86baacb3fd = $(`<div id="html_7d1fcef09c13dc51329c1b86baacb3fd" style="width: 100.0%; height: 100.0%;"><strong>Landover</strong><br><a href='https://www.wmata.com/rider-guide/stations/landover.cfm'>Station Info</a></div>`)[0];
+                popup_f704270ce9d2ed1195b9abf797221a60.setContent(html_7d1fcef09c13dc51329c1b86baacb3fd);
+            
+        
+
+        circle_marker_cb422f8df824708daa5506c15c41bf1a.bindPopup(popup_f704270ce9d2ed1195b9abf797221a60)
+        ;
+
+        
+    
+    
+            var circle_marker_21d9d182734e108282faf2ec4f32a0b5 = L.circleMarker(
+                [38.91663964838862, -76.91663029686826],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_be5e18977ebbc326ec17a839ac5d5a78 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dc1eca38c53a9c59f6461f7f7a220e37 = $(`<div id="html_dc1eca38c53a9c59f6461f7f7a220e37" style="width: 100.0%; height: 100.0%;"><strong>Cheverly</strong><br><a href='https://www.wmata.com/rider-guide/stations/cheverly.cfm'>Station Info</a></div>`)[0];
+                popup_be5e18977ebbc326ec17a839ac5d5a78.setContent(html_dc1eca38c53a9c59f6461f7f7a220e37);
+            
+        
+
+        circle_marker_21d9d182734e108282faf2ec4f32a0b5.bindPopup(popup_be5e18977ebbc326ec17a839ac5d5a78)
+        ;
+
+        
+    
+    
+            var circle_marker_7c2338358f1c0ca426a6c910c97ba232 = L.circleMarker(
+                [38.90060751653347, -76.84455387088464],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_7bff9da305e55a01b3ec7b21393272d1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_64d8afe44188df3f2a32a400116d1678 = $(`<div id="html_64d8afe44188df3f2a32a400116d1678" style="width: 100.0%; height: 100.0%;"><strong>Downtown Largo</strong><br><a href='https://www.wmata.com/rider-guide/stations/downtown-largo.cfm'>Station Info</a></div>`)[0];
+                popup_7bff9da305e55a01b3ec7b21393272d1.setContent(html_64d8afe44188df3f2a32a400116d1678);
+            
+        
+
+        circle_marker_7c2338358f1c0ca426a6c910c97ba232.bindPopup(popup_7bff9da305e55a01b3ec7b21393272d1)
+        ;
+
+        
+    
+    
+            var circle_marker_aba01f9dd281aa1c73cf603ac132e312 = L.circleMarker(
+                [38.90702400072911, -77.00302272641831],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_cd9a005ae10da5821313c3e5c1c5131e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eec41d12e9cbccba8d34f93e51eaf162 = $(`<div id="html_eec41d12e9cbccba8d34f93e51eaf162" style="width: 100.0%; height: 100.0%;"><strong>NoMa-Gallaudet U</strong><br><a href='https://www.wmata.com/rider-guide/stations/new-york-ave.cfm'>Station Info</a></div>`)[0];
+                popup_cd9a005ae10da5821313c3e5c1c5131e.setContent(html_eec41d12e9cbccba8d34f93e51eaf162);
+            
+        
+
+        circle_marker_aba01f9dd281aa1c73cf603ac132e312.bindPopup(popup_cd9a005ae10da5821313c3e5c1c5131e)
+        ;
+
+        
+    
+    
+            var circle_marker_57924c43715b9e97810fcd4f99260b27 = L.circleMarker(
+                [38.89598688010644, -77.07091098499193],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_cdfb369ec8b167fd8e7ca9157df04d85 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_79f9feba78c3f8de74412f51c24ac0b8 = $(`<div id="html_79f9feba78c3f8de74412f51c24ac0b8" style="width: 100.0%; height: 100.0%;"><strong>Rosslyn</strong><br><a href='https://www.wmata.com/rider-guide/stations/rosslyn.cfm'>Station Info</a></div>`)[0];
+                popup_cdfb369ec8b167fd8e7ca9157df04d85.setContent(html_79f9feba78c3f8de74412f51c24ac0b8);
+            
+        
+
+        circle_marker_57924c43715b9e97810fcd4f99260b27.bindPopup(popup_cdfb369ec8b167fd8e7ca9157df04d85)
+        ;
+
+        
+    
+    
+            var circle_marker_6699910b818de8bfb7ec4b7d5755508c = L.circleMarker(
+                [38.88469464037121, -77.06281242553689],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_fba1f37da0c4d696fc16b59caa05281b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_034005de8c06c16aa99c2633fdbddc88 = $(`<div id="html_034005de8c06c16aa99c2633fdbddc88" style="width: 100.0%; height: 100.0%;"><strong>Arlington Cemetery</strong><br><a href='https://www.wmata.com/rider-guide/stations/arlington-cemetery.cfm'>Station Info</a></div>`)[0];
+                popup_fba1f37da0c4d696fc16b59caa05281b.setContent(html_034005de8c06c16aa99c2633fdbddc88);
+            
+        
+
+        circle_marker_6699910b818de8bfb7ec4b7d5755508c.bindPopup(popup_fba1f37da0c4d696fc16b59caa05281b)
+        ;
+
+        
+    
+    
+            var circle_marker_01b7666a70b418a917e0486abd5ec984 = L.circleMarker(
+                [38.909605845165814, -77.04341665160557],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_0dac1ccb812eb0de39fd0e32ab48bf9a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_36822dc2f74f3d8e89ce96a969663e0d = $(`<div id="html_36822dc2f74f3d8e89ce96a969663e0d" style="width: 100.0%; height: 100.0%;"><strong>Dupont Circle</strong><br><a href='https://www.wmata.com/rider-guide/stations/dupont-circle.cfm'>Station Info</a></div>`)[0];
+                popup_0dac1ccb812eb0de39fd0e32ab48bf9a.setContent(html_36822dc2f74f3d8e89ce96a969663e0d);
+            
+        
+
+        circle_marker_01b7666a70b418a917e0486abd5ec984.bindPopup(popup_0dac1ccb812eb0de39fd0e32ab48bf9a)
+        ;
+
+        
+    
+    
+            var circle_marker_0ddb52e37dde60d5331a0354291ba367 = L.circleMarker(
+                [38.869470480374495, -77.05371796606917],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_67aefdfad051af3a445ebe5b37bc80e1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6fd25bba37fb46ec0e73184c7790332a = $(`<div id="html_6fd25bba37fb46ec0e73184c7790332a" style="width: 100.0%; height: 100.0%;"><strong>Pentagon</strong><br><a href='https://www.wmata.com/rider-guide/stations/pentagon.cfm'>Station Info</a></div>`)[0];
+                popup_67aefdfad051af3a445ebe5b37bc80e1.setContent(html_6fd25bba37fb46ec0e73184c7790332a);
+            
+        
+
+        circle_marker_0ddb52e37dde60d5331a0354291ba367.bindPopup(popup_67aefdfad051af3a445ebe5b37bc80e1)
+        ;
+
+        
+    
+    
+            var circle_marker_5c780e2b5daf6da55554d4ff81e60045 = L.circleMarker(
+                [38.85791209734927, -77.05029210057545],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_e22d0ed0e8d50cf81f55114ab12e1791 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ecc93b9b30ea302b6cad16447f6b7fb2 = $(`<div id="html_ecc93b9b30ea302b6cad16447f6b7fb2" style="width: 100.0%; height: 100.0%;"><strong>Crystal City</strong><br><a href='https://www.wmata.com/rider-guide/stations/crystal-city.cfm'>Station Info</a></div>`)[0];
+                popup_e22d0ed0e8d50cf81f55114ab12e1791.setContent(html_ecc93b9b30ea302b6cad16447f6b7fb2);
+            
+        
+
+        circle_marker_5c780e2b5daf6da55554d4ff81e60045.bindPopup(popup_e22d0ed0e8d50cf81f55114ab12e1791)
+        ;
+
+        
+    
+    
+            var circle_marker_ee4dc8eeeee5b2be19ac1deecf20086f = L.circleMarker(
+                [38.87648886724885, -77.00508792929439],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_6038b00508677ea5d84c5890c1b4303c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_209d9948baedbe4c6002516fa0626d65 = $(`<div id="html_209d9948baedbe4c6002516fa0626d65" style="width: 100.0%; height: 100.0%;"><strong>Navy Yard-Ballpark</strong><br><a href='https://www.wmata.com/rider-guide/stations/navy-yard.cfm'>Station Info</a></div>`)[0];
+                popup_6038b00508677ea5d84c5890c1b4303c.setContent(html_209d9948baedbe4c6002516fa0626d65);
+            
+        
+
+        circle_marker_ee4dc8eeeee5b2be19ac1deecf20086f.bindPopup(popup_6038b00508677ea5d84c5890c1b4303c)
+        ;
+
+        
+    
+    
+            var circle_marker_e8dec01441ff7bc61596af1385caa5d0 = L.circleMarker(
+                [38.90134058317957, -77.03363646045379],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_9d371064506dcb09d5a0597901e2f174 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fc45120568a34b7465419372fd24a6f3 = $(`<div id="html_fc45120568a34b7465419372fd24a6f3" style="width: 100.0%; height: 100.0%;"><strong>McPherson Sq</strong><br><a href='https://www.wmata.com/rider-guide/stations/mcpherson-sq.cfm'>Station Info</a></div>`)[0];
+                popup_9d371064506dcb09d5a0597901e2f174.setContent(html_fc45120568a34b7465419372fd24a6f3);
+            
+        
+
+        circle_marker_e8dec01441ff7bc61596af1385caa5d0.bindPopup(popup_9d371064506dcb09d5a0597901e2f174)
+        ;
+
+        
+    
+    
+            var circle_marker_92e1c7b60d2433578606ce63300f2eac = L.circleMarker(
+                [38.91348466034191, -77.02191398620502],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_7179cf344bb840303995f209190a683f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3323c970464b40481a07d5873180be18 = $(`<div id="html_3323c970464b40481a07d5873180be18" style="width: 100.0%; height: 100.0%;"><strong>Shaw-Howard U</strong><br><a href='https://www.wmata.com/rider-guide/stations/shaw-howard.cfm'>Station Info</a></div>`)[0];
+                popup_7179cf344bb840303995f209190a683f.setContent(html_3323c970464b40481a07d5873180be18);
+            
+        
+
+        circle_marker_92e1c7b60d2433578606ce63300f2eac.bindPopup(popup_7179cf344bb840303995f209190a683f)
+        ;
+
+        
+    
+    
+            var circle_marker_903fc3995026846f7eb73c71a1ee694f = L.circleMarker(
+                [38.841093556641, -76.97505640529616],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_50eede2fd69d0099336850537c5047e4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de247d63471affa9ce95cc86e5fbcfaf = $(`<div id="html_de247d63471affa9ce95cc86e5fbcfaf" style="width: 100.0%; height: 100.0%;"><strong>Southern Avenue</strong><br><a href='https://www.wmata.com/rider-guide/stations/southern-ave.cfm'>Station Info</a></div>`)[0];
+                popup_50eede2fd69d0099336850537c5047e4.setContent(html_de247d63471affa9ce95cc86e5fbcfaf);
+            
+        
+
+        circle_marker_903fc3995026846f7eb73c71a1ee694f.bindPopup(popup_50eede2fd69d0099336850537c5047e4)
+        ;
+
+        
+    
+    
+            var circle_marker_9e1a675e95860cbdf1671caaca9ed591 = L.circleMarker(
+                [39.011153673492075, -76.91105982997773],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_314335cdfdea9f4f3dcee9913b748cdd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c3b78523eb279b231ebc02b1d1b0d17f = $(`<div id="html_c3b78523eb279b231ebc02b1d1b0d17f" style="width: 100.0%; height: 100.0%;"><strong>Greenbelt</strong><br><a href='https://www.wmata.com/rider-guide/stations/greenbelt.cfm'>Station Info</a></div>`)[0];
+                popup_314335cdfdea9f4f3dcee9913b748cdd.setContent(html_c3b78523eb279b231ebc02b1d1b0d17f);
+            
+        
+
+        circle_marker_9e1a675e95860cbdf1671caaca9ed591.bindPopup(popup_314335cdfdea9f4f3dcee9913b748cdd)
+        ;
+
+        
+    
+    
+            var circle_marker_6f89c3f86d9033412492ada57daae8cd = L.circleMarker(
+                [38.94885922929714, -77.07958963107609],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_c0d83e2e32e2455ad8a9fe01efd31d4d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a93e148093154297f3fda065e723aa83 = $(`<div id="html_a93e148093154297f3fda065e723aa83" style="width: 100.0%; height: 100.0%;"><strong>Tenleytown-AU</strong><br><a href='https://www.wmata.com/rider-guide/stations/tenleytown.cfm'>Station Info</a></div>`)[0];
+                popup_c0d83e2e32e2455ad8a9fe01efd31d4d.setContent(html_a93e148093154297f3fda065e723aa83);
+            
+        
+
+        circle_marker_6f89c3f86d9033412492ada57daae8cd.bindPopup(popup_c0d83e2e32e2455ad8a9fe01efd31d4d)
+        ;
+
+        
+    
+    
+            var circle_marker_c4e0bc5a85a03d90fbd59fc9dade0343 = L.circleMarker(
+                [38.900788331406986, -77.18909715927872],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_6995f60ad2e0dfb6fe966bed7302c8de = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f6dfb8b65333fd32d66c10ef1ba14687 = $(`<div id="html_f6dfb8b65333fd32d66c10ef1ba14687" style="width: 100.0%; height: 100.0%;"><strong>West Falls Church</strong><br><a href='https://www.wmata.com/rider-guide/stations/west-falls-church.cfm'>Station Info</a></div>`)[0];
+                popup_6995f60ad2e0dfb6fe966bed7302c8de.setContent(html_f6dfb8b65333fd32d66c10ef1ba14687);
+            
+        
+
+        circle_marker_c4e0bc5a85a03d90fbd59fc9dade0343.bindPopup(popup_6995f60ad2e0dfb6fe966bed7302c8de)
+        ;
+
+        
+    
+    
+            var circle_marker_57c9ec0eeeb44a42984024f5fe50f13c = L.circleMarker(
+                [38.94774066428513, -77.34006221928644],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_b48f98eee66d1182fc433f15d31f714e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a62721dc410272ef213e389544b99f95 = $(`<div id="html_a62721dc410272ef213e389544b99f95" style="width: 100.0%; height: 100.0%;"><strong>Wiehle-Reston East</strong><br><a href='https://www.wmata.com/rider-guide/stations/wiehle-reston.cfm'>Station Info</a></div>`)[0];
+                popup_b48f98eee66d1182fc433f15d31f714e.setContent(html_a62721dc410272ef213e389544b99f95);
+            
+        
+
+        circle_marker_57c9ec0eeeb44a42984024f5fe50f13c.bindPopup(popup_b48f98eee66d1182fc433f15d31f714e)
+        ;
+
+        
+    
+    
+            var circle_marker_bb6603167a491d342873cb74ece33167 = L.circleMarker(
+                [38.97864143976418, -76.92812724204757],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_5e179c2e35ec757abbc814b14a9cddf7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fb0ce243884b1d98afc062d335e0659b = $(`<div id="html_fb0ce243884b1d98afc062d335e0659b" style="width: 100.0%; height: 100.0%;"><strong>College Park-U of Md</strong><br><a href='https://www.wmata.com/rider-guide/stations/college-park.cfm'>Station Info</a></div>`)[0];
+                popup_5e179c2e35ec757abbc814b14a9cddf7.setContent(html_fb0ce243884b1d98afc062d335e0659b);
+            
+        
+
+        circle_marker_bb6603167a491d342873cb74ece33167.bindPopup(popup_5e179c2e35ec757abbc814b14a9cddf7)
+        ;
+
+        
+    
+    
+            var circle_marker_abefdf79a327c37ecfd5dc89911f3fcc = L.circleMarker(
+                [38.889473645298985, -76.91181036418405],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_73791811c2f4b7deff60b0e923fd7241 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e6a398c63a7096b13f62c00f859fe311 = $(`<div id="html_e6a398c63a7096b13f62c00f859fe311" style="width: 100.0%; height: 100.0%;"><strong>Capitol Heights</strong><br><a href='https://www.wmata.com/rider-guide/stations/capitol-hghts.cfm'>Station Info</a></div>`)[0];
+                popup_73791811c2f4b7deff60b0e923fd7241.setContent(html_e6a398c63a7096b13f62c00f859fe311);
+            
+        
+
+        circle_marker_abefdf79a327c37ecfd5dc89911f3fcc.bindPopup(popup_73791811c2f4b7deff60b0e923fd7241)
+        ;
+
+        
+    
+    
+            var circle_marker_78cc0b9577b2fc98d9f7eb06da283563 = L.circleMarker(
+                [38.89384271914414, -76.86807700443886],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_5a9bba65cbe1e53147a203911c09c628 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_605803ed2b4e034fed400f75375c1f1b = $(`<div id="html_605803ed2b4e034fed400f75375c1f1b" style="width: 100.0%; height: 100.0%;"><strong>Morgan Boulevard</strong><br><a href='https://www.wmata.com/rider-guide/stations/morgan-blvd.cfm'>Station Info</a></div>`)[0];
+                popup_5a9bba65cbe1e53147a203911c09c628.setContent(html_605803ed2b4e034fed400f75375c1f1b);
+            
+        
+
+        circle_marker_78cc0b9577b2fc98d9f7eb06da283563.bindPopup(popup_5a9bba65cbe1e53147a203911c09c628)
+        ;
+
+        
+    
+    
+            var circle_marker_7485ddd01ad5860fa285dca73e6effd2 = L.circleMarker(
+                [38.93744242409251, -77.02346319144657],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_f22ca4c4a82004054da260f8866b2940 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fbb7b10d0bff74579f1dc2012885597a = $(`<div id="html_fbb7b10d0bff74579f1dc2012885597a" style="width: 100.0%; height: 100.0%;"><strong>Georgia Ave-Petworth</strong><br><a href='https://www.wmata.com/rider-guide/stations/georgia-ave.cfm'>Station Info</a></div>`)[0];
+                popup_f22ca4c4a82004054da260f8866b2940.setContent(html_fbb7b10d0bff74579f1dc2012885597a);
+            
+        
+
+        circle_marker_7485ddd01ad5860fa285dca73e6effd2.bindPopup(popup_f22ca4c4a82004054da260f8866b2940)
+        ;
+
+        
+    
+    
+            var circle_marker_8c00300f6e0df0928918e12aafc68283 = L.circleMarker(
+                [38.97608633299409, -77.01817898679428],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_2248b2093dc21d5666cded48b26428de = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d89fab3197d4a636198657def8051b54 = $(`<div id="html_d89fab3197d4a636198657def8051b54" style="width: 100.0%; height: 100.0%;"><strong>Takoma</strong><br><a href='https://www.wmata.com/rider-guide/stations/takoma.cfm'>Station Info</a></div>`)[0];
+                popup_2248b2093dc21d5666cded48b26428de.setContent(html_d89fab3197d4a636198657def8051b54);
+            
+        
+
+        circle_marker_8c00300f6e0df0928918e12aafc68283.bindPopup(popup_2248b2093dc21d5666cded48b26428de)
+        ;
+
+        
+    
+    
+            var circle_marker_417930bc1618810d2ac622b419c2546c = L.circleMarker(
+                [39.06179158336699, -77.05355966373482],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_65d2f020d79e6a5e9dd46d4754c17e5a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1452a3a922c1fb5aec9e4656a4fcd404 = $(`<div id="html_1452a3a922c1fb5aec9e4656a4fcd404" style="width: 100.0%; height: 100.0%;"><strong>Glenmont</strong><br><a href='https://www.wmata.com/rider-guide/stations/glenmont.cfm'>Station Info</a></div>`)[0];
+                popup_65d2f020d79e6a5e9dd46d4754c17e5a.setContent(html_1452a3a922c1fb5aec9e4656a4fcd404);
+            
+        
+
+        circle_marker_417930bc1618810d2ac622b419c2546c.bindPopup(popup_65d2f020d79e6a5e9dd46d4754c17e5a)
+        ;
+
+        
+    
+    
+            var circle_marker_a2c31b969ba392033ec4a71b24940ace = L.circleMarker(
+                [39.037534956767026, -77.05010935533228],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_cb2eabacbbea7b62d5e05c087bfee7f5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b6b1db720089abbb667c5221725408bf = $(`<div id="html_b6b1db720089abbb667c5221725408bf" style="width: 100.0%; height: 100.0%;"><strong>Wheaton</strong><br><a href='https://www.wmata.com/rider-guide/stations/wheaton.cfm'>Station Info</a></div>`)[0];
+                popup_cb2eabacbbea7b62d5e05c087bfee7f5.setContent(html_b6b1db720089abbb667c5221725408bf);
+            
+        
+
+        circle_marker_a2c31b969ba392033ec4a71b24940ace.bindPopup(popup_cb2eabacbbea7b62d5e05c087bfee7f5)
+        ;
+
+        
+    
+    
+            var circle_marker_aa980edac0614c9f70501e72c4dc67cb = L.circleMarker(
+                [39.0149620841024, -77.04291885307322],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_6c78c83dfb7d9e686d540eeffb4cd484 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_55e0ea2b31602944c9091ddb46201472 = $(`<div id="html_55e0ea2b31602944c9091ddb46201472" style="width: 100.0%; height: 100.0%;"><strong>Forest Glen</strong><br><a href='https://www.wmata.com/rider-guide/stations/forest-glen.cfm'>Station Info</a></div>`)[0];
+                popup_6c78c83dfb7d9e686d540eeffb4cd484.setContent(html_55e0ea2b31602944c9091ddb46201472);
+            
+        
+
+        circle_marker_aa980edac0614c9f70501e72c4dc67cb.bindPopup(popup_6c78c83dfb7d9e686d540eeffb4cd484)
+        ;
+
+        
+    
+    
+            var circle_marker_c5eb2194c19af77844574370e39bd1ea = L.circleMarker(
+                [38.9939571798124, -77.03102011999887],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_f5400882344c197ab2966ad5622b3f07 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2dacd8abef86d5fb187148c405f998dc = $(`<div id="html_2dacd8abef86d5fb187148c405f998dc" style="width: 100.0%; height: 100.0%;"><strong>Silver Spring</strong><br><a href='https://www.wmata.com/rider-guide/stations/silver-spring.cfm'>Station Info</a></div>`)[0];
+                popup_f5400882344c197ab2966ad5622b3f07.setContent(html_2dacd8abef86d5fb187148c405f998dc);
+            
+        
+
+        circle_marker_c5eb2194c19af77844574370e39bd1ea.bindPopup(popup_f5400882344c197ab2966ad5622b3f07)
+        ;
+
+        
+    
+    
+            var circle_marker_5bfb5dc8dfa2fb9f5fee2496ecf00092 = L.circleMarker(
+                [38.933218785528275, -76.99453656319739],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_35902720762999f233e6f92b606d14b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_02fe7f6469d0556ae9f4d64b6f6154c9 = $(`<div id="html_02fe7f6469d0556ae9f4d64b6f6154c9" style="width: 100.0%; height: 100.0%;"><strong>Brookland-CUA</strong><br><a href='https://www.wmata.com/rider-guide/stations/brookland.cfm'>Station Info</a></div>`)[0];
+                popup_35902720762999f233e6f92b606d14b0.setContent(html_02fe7f6469d0556ae9f4d64b6f6154c9);
+            
+        
+
+        circle_marker_5bfb5dc8dfa2fb9f5fee2496ecf00092.bindPopup(popup_35902720762999f233e6f92b606d14b0)
+        ;
+
+        
+    
+    
+            var circle_marker_25072f5784423a66723c94ee49c48ff1 = L.circleMarker(
+                [38.95185456523338, -77.0022053584327],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_157169edfc2188192a19ec2e9e2f17d3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cb9d57a2af4f990d9714645e83127406 = $(`<div id="html_cb9d57a2af4f990d9714645e83127406" style="width: 100.0%; height: 100.0%;"><strong>Fort Totten</strong><br><a href='https://www.wmata.com/rider-guide/stations/fort-totten.cfm'>Station Info</a></div>`)[0];
+                popup_157169edfc2188192a19ec2e9e2f17d3.setContent(html_cb9d57a2af4f990d9714645e83127406);
+            
+        
+
+        circle_marker_25072f5784423a66723c94ee49c48ff1.bindPopup(popup_157169edfc2188192a19ec2e9e2f17d3)
+        ;
+
+        
+    
+    
+            var circle_marker_a3edf5f7b2d3010f5a4fe538276d82a6 = L.circleMarker(
+                [38.965393247951866, -76.95588377590036],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_9f59e21257f1cb775743f3337ba752d7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d3c0c3d31de52d426f6160f53e64b163 = $(`<div id="html_d3c0c3d31de52d426f6160f53e64b163" style="width: 100.0%; height: 100.0%;"><strong>Hyattsville Crossing</strong><br><a href='https://www.wmata.com/rider-guide/stations/hyattsville-xing.cfm'>Station Info</a></div>`)[0];
+                popup_9f59e21257f1cb775743f3337ba752d7.setContent(html_d3c0c3d31de52d426f6160f53e64b163);
+            
+        
+
+        circle_marker_a3edf5f7b2d3010f5a4fe538276d82a6.bindPopup(popup_9f59e21257f1cb775743f3337ba752d7)
+        ;
+
+        
+    
+    
+            var circle_marker_2fd1a0f8c5bd4574974bf8ffe0171269 = L.circleMarker(
+                [38.95504797022461, -76.96957894675788],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_5a500e548ce72b5348a725b8988e39f5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9bee86c35ff02d84530499c703f95f0c = $(`<div id="html_9bee86c35ff02d84530499c703f95f0c" style="width: 100.0%; height: 100.0%;"><strong>West Hyattsville</strong><br><a href='https://www.wmata.com/rider-guide/stations/west-hyattsville.cfm'>Station Info</a></div>`)[0];
+                popup_5a500e548ce72b5348a725b8988e39f5.setContent(html_9bee86c35ff02d84530499c703f95f0c);
+            
+        
+
+        circle_marker_2fd1a0f8c5bd4574974bf8ffe0171269.bindPopup(popup_5a500e548ce72b5348a725b8988e39f5)
+        ;
+
+        
+    
+    
+            var circle_marker_5a18d21313b953db740fa5ee2bcd7c1a = L.circleMarker(
+                [38.89098346374866, -76.93836712615105],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_4f31b6a4a98f4b620c6768f1d07b15ff = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1cdf6093f459d7cdb7099f1143a0a9a2 = $(`<div id="html_1cdf6093f459d7cdb7099f1143a0a9a2" style="width: 100.0%; height: 100.0%;"><strong>Benning Road</strong><br><a href='https://www.wmata.com/rider-guide/stations/benning-rd.cfm'>Station Info</a></div>`)[0];
+                popup_4f31b6a4a98f4b620c6768f1d07b15ff.setContent(html_1cdf6093f459d7cdb7099f1143a0a9a2);
+            
+        
+
+        circle_marker_5a18d21313b953db740fa5ee2bcd7c1a.bindPopup(popup_4f31b6a4a98f4b620c6768f1d07b15ff)
+        ;
+
+        
+    
+    
+            var circle_marker_ca1a4fc0009f0b013185456e3438ff8e = L.circleMarker(
+                [38.88675560536696, -76.89411015399014],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_e002ee3f1c75eaed8b3ca1211278b269 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a101a043e0f4d2df1d6ccc64b42c1834 = $(`<div id="html_a101a043e0f4d2df1d6ccc64b42c1834" style="width: 100.0%; height: 100.0%;"><strong>Addison Road-Seat Pleasant</strong><br><a href='https://www.wmata.com/rider-guide/stations/addison-rd.cfm'>Station Info</a></div>`)[0];
+                popup_e002ee3f1c75eaed8b3ca1211278b269.setContent(html_a101a043e0f4d2df1d6ccc64b42c1834);
+            
+        
+
+        circle_marker_ca1a4fc0009f0b013185456e3438ff8e.bindPopup(popup_e002ee3f1c75eaed8b3ca1211278b269)
+        ;
+
+        
+    
+    
+            var circle_marker_c4026114916497beffc4c85e8f2e6b90 = L.circleMarker(
+                [38.9081862878493, -76.93525904115437],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_ca047e1257ebae1479e17bfe8ea0e2e0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_34dbb6ab3f34e52601e3bb33572be9d3 = $(`<div id="html_34dbb6ab3f34e52601e3bb33572be9d3" style="width: 100.0%; height: 100.0%;"><strong>Deanwood</strong><br><a href='https://www.wmata.com/rider-guide/stations/deanwood.cfm'>Station Info</a></div>`)[0];
+                popup_ca047e1257ebae1479e17bfe8ea0e2e0.setContent(html_34dbb6ab3f34e52601e3bb33572be9d3);
+            
+        
+
+        circle_marker_c4026114916497beffc4c85e8f2e6b90.bindPopup(popup_ca047e1257ebae1479e17bfe8ea0e2e0)
+        ;
+
+        
+    
+    
+            var circle_marker_ee28223970a81258991825f38b67b8a4 = L.circleMarker(
+                [39.11993515031108, -77.16462967696448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_c00bab223552bacdacefcbc6cdfd692b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bf77d24972fecb377ac5a52f88465364 = $(`<div id="html_bf77d24972fecb377ac5a52f88465364" style="width: 100.0%; height: 100.0%;"><strong>Shady Grove</strong><br><a href='https://www.wmata.com/rider-guide/stations/shady-grove.cfm'>Station Info</a></div>`)[0];
+                popup_c00bab223552bacdacefcbc6cdfd692b.setContent(html_bf77d24972fecb377ac5a52f88465364);
+            
+        
+
+        circle_marker_ee28223970a81258991825f38b67b8a4.bindPopup(popup_c00bab223552bacdacefcbc6cdfd692b)
+        ;
+
+        
+    
+    
+            var circle_marker_c046b02e309e8c291bc8dd744c0fec0c = L.circleMarker(
+                [39.08432942644285, -77.14612767389842],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_e793f7ee72c921edcbd0ed1006f8e63b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f7e0eb00a0c17643966b2bc951a7d239 = $(`<div id="html_f7e0eb00a0c17643966b2bc951a7d239" style="width: 100.0%; height: 100.0%;"><strong>Rockville</strong><br><a href='https://www.wmata.com/rider-guide/stations/rockville.cfm'>Station Info</a></div>`)[0];
+                popup_e793f7ee72c921edcbd0ed1006f8e63b.setContent(html_f7e0eb00a0c17643966b2bc951a7d239);
+            
+        
+
+        circle_marker_c046b02e309e8c291bc8dd744c0fec0c.bindPopup(popup_e793f7ee72c921edcbd0ed1006f8e63b)
+        ;
+
+        
+    
+    
+            var circle_marker_e0c50be68516eaddd0a012c16d877c2e = L.circleMarker(
+                [39.062475467151565, -77.12082027714577],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_d41c03322d9440c462f25b340278d235 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7114d7c97a99c7fa53c6968f194ca6d4 = $(`<div id="html_7114d7c97a99c7fa53c6968f194ca6d4" style="width: 100.0%; height: 100.0%;"><strong>Twinbrook</strong><br><a href='https://www.wmata.com/rider-guide/stations/twinbrook.cfm'>Station Info</a></div>`)[0];
+                popup_d41c03322d9440c462f25b340278d235.setContent(html_7114d7c97a99c7fa53c6968f194ca6d4);
+            
+        
+
+        circle_marker_e0c50be68516eaddd0a012c16d877c2e.bindPopup(popup_d41c03322d9440c462f25b340278d235)
+        ;
+
+        
+    
+    
+            var circle_marker_7b73930597d02aa65e75d98c2f3e0bcb = L.circleMarker(
+                [39.0481591702013, -77.1128321810407],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_ab53096ae503028d54d752b32a755b9b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_84141896a1457a79d73731371a6a8351 = $(`<div id="html_84141896a1457a79d73731371a6a8351" style="width: 100.0%; height: 100.0%;"><strong>North Bethesda</strong><br><a href='https://www.wmata.com/rider-guide/stations/north-bethesda.cfm'>Station Info</a></div>`)[0];
+                popup_ab53096ae503028d54d752b32a755b9b.setContent(html_84141896a1457a79d73731371a6a8351);
+            
+        
+
+        circle_marker_7b73930597d02aa65e75d98c2f3e0bcb.bindPopup(popup_ab53096ae503028d54d752b32a755b9b)
+        ;
+
+        
+    
+    
+            var circle_marker_489d699f98dd327209b46cd76ef42cf8 = L.circleMarker(
+                [39.02927675944517, -77.1038520380558],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_dc1591bedc74306392ff435cf12817ba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7732294a1768e7eb42ed119a70c890bd = $(`<div id="html_7732294a1768e7eb42ed119a70c890bd" style="width: 100.0%; height: 100.0%;"><strong>Grosvenor-Strathmore</strong><br><a href='https://www.wmata.com/rider-guide/stations/grosvenor.cfm'>Station Info</a></div>`)[0];
+                popup_dc1591bedc74306392ff435cf12817ba.setContent(html_7732294a1768e7eb42ed119a70c890bd);
+            
+        
+
+        circle_marker_489d699f98dd327209b46cd76ef42cf8.bindPopup(popup_dc1591bedc74306392ff435cf12817ba)
+        ;
+
+        
+    
+    
+            var circle_marker_bae7f4dd6f7b6dbc5bc75a5661fa318e = L.circleMarker(
+                [39.000064288152586, -77.0969546046393],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_ccd9eeb3b5315856b7129295e1ed17d9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6784c67ece7e61f3e2a55b6da115089e = $(`<div id="html_6784c67ece7e61f3e2a55b6da115089e" style="width: 100.0%; height: 100.0%;"><strong>Medical Center</strong><br><a href='https://www.wmata.com/rider-guide/stations/medical-center.cfm'>Station Info</a></div>`)[0];
+                popup_ccd9eeb3b5315856b7129295e1ed17d9.setContent(html_6784c67ece7e61f3e2a55b6da115089e);
+            
+        
+
+        circle_marker_bae7f4dd6f7b6dbc5bc75a5661fa318e.bindPopup(popup_ccd9eeb3b5315856b7129295e1ed17d9)
+        ;
+
+        
+    
+    
+            var circle_marker_1ebbbea8591a738c47f26fdee70c47ee = L.circleMarker(
+                [38.9844014611561, -77.09413150447965],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_4e0b867f43d8619ea91a6b7e53498478 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_87d9c4d0fe8cbcebad70e7cb535c1666 = $(`<div id="html_87d9c4d0fe8cbcebad70e7cb535c1666" style="width: 100.0%; height: 100.0%;"><strong>Bethesda</strong><br><a href='https://www.wmata.com/rider-guide/stations/bethesda.cfm'>Station Info</a></div>`)[0];
+                popup_4e0b867f43d8619ea91a6b7e53498478.setContent(html_87d9c4d0fe8cbcebad70e7cb535c1666);
+            
+        
+
+        circle_marker_1ebbbea8591a738c47f26fdee70c47ee.bindPopup(popup_4e0b867f43d8619ea91a6b7e53498478)
+        ;
+
+        
+    
+    
+            var circle_marker_017691ad24ece070e432ec991ac45c07 = L.circleMarker(
+                [38.90070579477101, -77.0502800325331],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_cecaba2454e4a886778befc318dd5f4b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f46fba70d2161147d7f9c56a7eb9ccc = $(`<div id="html_8f46fba70d2161147d7f9c56a7eb9ccc" style="width: 100.0%; height: 100.0%;"><strong>Foggy Bottom-GWU</strong><br><a href='https://www.wmata.com/rider-guide/stations/foggy-bottom.cfm'>Station Info</a></div>`)[0];
+                popup_cecaba2454e4a886778befc318dd5f4b.setContent(html_8f46fba70d2161147d7f9c56a7eb9ccc);
+            
+        
+
+        circle_marker_017691ad24ece070e432ec991ac45c07.bindPopup(popup_cecaba2454e4a886778befc318dd5f4b)
+        ;
+
+        
+    
+    
+            var circle_marker_723cae52d8471faeffff2cb15ea78f95 = L.circleMarker(
+                [38.89018331326664, -77.08713353535401],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_903b5f5aa3b46e83ada2867d1df7d6b6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9f56aec96c485db3788fdbe0b926ea58 = $(`<div id="html_9f56aec96c485db3788fdbe0b926ea58" style="width: 100.0%; height: 100.0%;"><strong>Court House</strong><br><a href='https://www.wmata.com/rider-guide/stations/court-house.cfm'>Station Info</a></div>`)[0];
+                popup_903b5f5aa3b46e83ada2867d1df7d6b6.setContent(html_9f56aec96c485db3788fdbe0b926ea58);
+            
+        
+
+        circle_marker_723cae52d8471faeffff2cb15ea78f95.bindPopup(popup_903b5f5aa3b46e83ada2867d1df7d6b6)
+        ;
+
+        
+    
+    
+            var circle_marker_2cf497395973bd81cec846c711d2b56c = L.circleMarker(
+                [38.8867126201147, -77.09539640501809],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_61850bf0acddefc3d5cb8904a4dc8913 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_05bfed219a1f6e763dffe195eecf1269 = $(`<div id="html_05bfed219a1f6e763dffe195eecf1269" style="width: 100.0%; height: 100.0%;"><strong>Clarendon</strong><br><a href='https://www.wmata.com/rider-guide/stations/clarendon.cfm'>Station Info</a></div>`)[0];
+                popup_61850bf0acddefc3d5cb8904a4dc8913.setContent(html_05bfed219a1f6e763dffe195eecf1269);
+            
+        
+
+        circle_marker_2cf497395973bd81cec846c711d2b56c.bindPopup(popup_61850bf0acddefc3d5cb8904a4dc8913)
+        ;
+
+        
+    
+    
+            var circle_marker_5c4b6c460db362cb4f40f73e599625e2 = L.circleMarker(
+                [38.88596094496427, -77.15688534574227],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_aa306aaab1ddfce01cceb88c0434e308 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f19a1c691fbfd1c1410aeef0e2fe325f = $(`<div id="html_f19a1c691fbfd1c1410aeef0e2fe325f" style="width: 100.0%; height: 100.0%;"><strong>East Falls Church</strong><br><a href='https://www.wmata.com/rider-guide/stations/e-falls-church.cfm'>Station Info</a></div>`)[0];
+                popup_aa306aaab1ddfce01cceb88c0434e308.setContent(html_f19a1c691fbfd1c1410aeef0e2fe325f);
+            
+        
+
+        circle_marker_5c4b6c460db362cb4f40f73e599625e2.bindPopup(popup_aa306aaab1ddfce01cceb88c0434e308)
+        ;
+
+        
+    
+    
+            var circle_marker_362a1895f75400d9b38525582d8c142f = L.circleMarker(
+                [38.88337393188724, -77.10297960302945],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_70092e76308e67991111ea03999c5b92 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1e5d41d69ef48b88acd025c78234c124 = $(`<div id="html_1e5d41d69ef48b88acd025c78234c124" style="width: 100.0%; height: 100.0%;"><strong>Virginia Square-GMU</strong><br><a href='https://www.wmata.com/rider-guide/stations/virginia-sq.cfm'>Station Info</a></div>`)[0];
+                popup_70092e76308e67991111ea03999c5b92.setContent(html_1e5d41d69ef48b88acd025c78234c124);
+            
+        
+
+        circle_marker_362a1895f75400d9b38525582d8c142f.bindPopup(popup_70092e76308e67991111ea03999c5b92)
+        ;
+
+        
+    
+    
+            var circle_marker_7079559d996f0f599537ad8109ae62f7 = L.circleMarker(
+                [38.88219065327559, -77.11317114697351],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_746ace62f202b023f8e5246e50f0f4c5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3f1d47e2df6d95245c9de96b24a1b639 = $(`<div id="html_3f1d47e2df6d95245c9de96b24a1b639" style="width: 100.0%; height: 100.0%;"><strong>Ballston-MU</strong><br><a href='https://www.wmata.com/rider-guide/stations/ballston.cfm'>Station Info</a></div>`)[0];
+                popup_746ace62f202b023f8e5246e50f0f4c5.setContent(html_3f1d47e2df6d95245c9de96b24a1b639);
+            
+        
+
+        circle_marker_7079559d996f0f599537ad8109ae62f7.bindPopup(popup_746ace62f202b023f8e5246e50f0f4c5)
+        ;
+
+        
+    
+    
+            var circle_marker_1cef210c9f01a5944f833e89baa862ad = L.circleMarker(
+                [38.901320680204925, -77.0406977056811],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_e7579e033e1d7467db58cbd1ea4eaeac = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e8c80831a3a56f085898776cfc3925bf = $(`<div id="html_e8c80831a3a56f085898776cfc3925bf" style="width: 100.0%; height: 100.0%;"><strong>Farragut West</strong><br><a href='https://www.wmata.com/rider-guide/stations/farragut-west.cfm'>Station Info</a></div>`)[0];
+                popup_e7579e033e1d7467db58cbd1ea4eaeac.setContent(html_e8c80831a3a56f085898776cfc3925bf);
+            
+        
+
+        circle_marker_1cef210c9f01a5944f833e89baa862ad.bindPopup(popup_e7579e033e1d7467db58cbd1ea4eaeac)
+        ;
+
+        
+    
+    
+            var circle_marker_ec4f9da1826c6a93378e45a9fd728f00 = L.circleMarker(
+                [38.90320973271147, -77.03970311757885],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_c671159d53d6a47f5d03a67a0c136861 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6537f7503dc7b3fcb7b396bc3c1b4fbe = $(`<div id="html_6537f7503dc7b3fcb7b396bc3c1b4fbe" style="width: 100.0%; height: 100.0%;"><strong>Farragut North</strong><br><a href='https://www.wmata.com/rider-guide/stations/farragut-north.cfm'>Station Info</a></div>`)[0];
+                popup_c671159d53d6a47f5d03a67a0c136861.setContent(html_6537f7503dc7b3fcb7b396bc3c1b4fbe);
+            
+        
+
+        circle_marker_ec4f9da1826c6a93378e45a9fd728f00.bindPopup(popup_c671159d53d6a47f5d03a67a0c136861)
+        ;
+
+        
+    
+    
+            var circle_marker_5d4402d4480c9fde65b0da3fa3c7d840 = L.circleMarker(
+                [38.92509292748009, -77.05242031642709],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_82e6c102c09d937fbb6c607d26e83f2c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b80251310d2e5aaaa482cc77a867dae9 = $(`<div id="html_b80251310d2e5aaaa482cc77a867dae9" style="width: 100.0%; height: 100.0%;"><strong>Woodley Park-Zoo/Adams Morgan</strong><br><a href='https://www.wmata.com/rider-guide/stations/woodley-park.cfm'>Station Info</a></div>`)[0];
+                popup_82e6c102c09d937fbb6c607d26e83f2c.setContent(html_b80251310d2e5aaaa482cc77a867dae9);
+            
+        
+
+        circle_marker_5d4402d4480c9fde65b0da3fa3c7d840.bindPopup(popup_82e6c102c09d937fbb6c607d26e83f2c)
+        ;
+
+        
+    
+    
+            var circle_marker_8605dac97671624a2815b8acf7b7f3e0 = L.circleMarker(
+                [38.8848455113141, -77.02191076776728],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_b96cd6f8650142f95175b541094efb78 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a4e93da1921ebc2139e2cc22bec167f3 = $(`<div id="html_a4e93da1921ebc2139e2cc22bec167f3" style="width: 100.0%; height: 100.0%;"><strong>L'Enfant Plaza</strong><br><a href='https://www.wmata.com/rider-guide/stations/lenfant-plaza.cfm'>Station Info</a></div>`)[0];
+                popup_b96cd6f8650142f95175b541094efb78.setContent(html_a4e93da1921ebc2139e2cc22bec167f3);
+            
+        
+
+        circle_marker_8605dac97671624a2815b8acf7b7f3e0.bindPopup(popup_b96cd6f8650142f95175b541094efb78)
+        ;
+
+        
+    
+    
+            var circle_marker_45cd248a17748be24edb2040c4e6984c = L.circleMarker(
+                [38.88802648586597, -77.02806852006908],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_2f5876ac7dc694026e87838b71a1d82a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0ab904970ee05646db49e223baf8673c = $(`<div id="html_0ab904970ee05646db49e223baf8673c" style="width: 100.0%; height: 100.0%;"><strong>Smithsonian</strong><br><a href='https://www.wmata.com/rider-guide/stations/smithsonian.cfm'>Station Info</a></div>`)[0];
+                popup_2f5876ac7dc694026e87838b71a1d82a.setContent(html_0ab904970ee05646db49e223baf8673c);
+            
+        
+
+        circle_marker_45cd248a17748be24edb2040c4e6984c.bindPopup(popup_2f5876ac7dc694026e87838b71a1d82a)
+        ;
+
+        
+    
+    
+            var circle_marker_63a470bbca3aa442a61f8c732e016c77 = L.circleMarker(
+                [38.89367300870453, -77.02191667221093],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_2967d04e5e84f8a17e0bbca37b0043b1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_152738609efed62ac56520feda6c0020 = $(`<div id="html_152738609efed62ac56520feda6c0020" style="width: 100.0%; height: 100.0%;"><strong>Archives-Navy Memorial-Penn Quarter</strong><br><a href='https://www.wmata.com/rider-guide/stations/archives.cfm'>Station Info</a></div>`)[0];
+                popup_2967d04e5e84f8a17e0bbca37b0043b1.setContent(html_152738609efed62ac56520feda6c0020);
+            
+        
+
+        circle_marker_63a470bbca3aa442a61f8c732e016c77.bindPopup(popup_2967d04e5e84f8a17e0bbca37b0043b1)
+        ;
+
+        
+    
+    
+            var circle_marker_85903ee4b9dc71a00713aead7d21185d = L.circleMarker(
+                [38.876469648772314, -77.01750749059426],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_0a86ae31726e973bc800927e4db39e19 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_66092d1c2cd67967eda6e9d4191de187 = $(`<div id="html_66092d1c2cd67967eda6e9d4191de187" style="width: 100.0%; height: 100.0%;"><strong>Waterfront</strong><br><a href='https://www.wmata.com/rider-guide/stations/waterfront.cfm'>Station Info</a></div>`)[0];
+                popup_0a86ae31726e973bc800927e4db39e19.setContent(html_66092d1c2cd67967eda6e9d4191de187);
+            
+        
+
+        circle_marker_85903ee4b9dc71a00713aead7d21185d.bindPopup(popup_0a86ae31726e973bc800927e4db39e19)
+        ;
+
+        
+    
+    
+            var circle_marker_8225656583a5cfd1d6ddf7feb597ce6f = L.circleMarker(
+                [38.853424162228634, -77.04404458303222],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_7de581e5bdca081c89ce539ee180039f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6d329a19918e7ec04b134ecddd2a261b = $(`<div id="html_6d329a19918e7ec04b134ecddd2a261b" style="width: 100.0%; height: 100.0%;"><strong>Ronald Reagan Washington National Airport</strong><br><a href='https://www.wmata.com/rider-guide/stations/national-airport.cfm'>Station Info</a></div>`)[0];
+                popup_7de581e5bdca081c89ce539ee180039f.setContent(html_6d329a19918e7ec04b134ecddd2a261b);
+            
+        
+
+        circle_marker_8225656583a5cfd1d6ddf7feb597ce6f.bindPopup(popup_7de581e5bdca081c89ce539ee180039f)
+        ;
+
+        
+    
+    
+            var circle_marker_17ad63e2232d1fb38202f16da7236fd6 = L.circleMarker(
+                [38.79931543416227, -77.12911383552941],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_0a8297544c60188597a45c5f10a38633 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5de9212e1294dc650284fb26a69e4fe8 = $(`<div id="html_5de9212e1294dc650284fb26a69e4fe8" style="width: 100.0%; height: 100.0%;"><strong>Van Dorn Street</strong><br><a href='https://www.wmata.com/rider-guide/stations/van-dorn-st.cfm'>Station Info</a></div>`)[0];
+                popup_0a8297544c60188597a45c5f10a38633.setContent(html_5de9212e1294dc650284fb26a69e4fe8);
+            
+        
+
+        circle_marker_17ad63e2232d1fb38202f16da7236fd6.bindPopup(popup_0a8297544c60188597a45c5f10a38633)
+        ;
+
+        
+    
+    
+            var circle_marker_7e9d9d0f06943fb85dedc278d76f9073 = L.circleMarker(
+                [38.7665296467617, -77.16797250233967],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_413d989b873761706dfd52c46121175c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6adac6dfd540d0a4462e68aea468d0a5 = $(`<div id="html_6adac6dfd540d0a4462e68aea468d0a5" style="width: 100.0%; height: 100.0%;"><strong>Franconia-Springfield</strong><br><a href='https://www.wmata.com/rider-guide/stations/franconia-sprngfld.cfm'>Station Info</a></div>`)[0];
+                popup_413d989b873761706dfd52c46121175c.setContent(html_6adac6dfd540d0a4462e68aea468d0a5);
+            
+        
+
+        circle_marker_7e9d9d0f06943fb85dedc278d76f9073.bindPopup(popup_413d989b873761706dfd52c46121175c)
+        ;
+
+        
+    
+    
+            var circle_marker_3dfb4ba2c257c5382f19180331a86d6a = L.circleMarker(
+                [38.88508013881906, -77.0158704987507],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_df0d64d54f9cf2ed69417d71390e29cd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e045ce2f9e30cf8be87ae8bf5ac9e8ff = $(`<div id="html_e045ce2f9e30cf8be87ae8bf5ac9e8ff" style="width: 100.0%; height: 100.0%;"><strong>Federal Center SW</strong><br><a href='https://www.wmata.com/rider-guide/stations/federal-ctr-sw.cfm'>Station Info</a></div>`)[0];
+                popup_df0d64d54f9cf2ed69417d71390e29cd.setContent(html_e045ce2f9e30cf8be87ae8bf5ac9e8ff);
+            
+        
+
+        circle_marker_3dfb4ba2c257c5382f19180331a86d6a.bindPopup(popup_df0d64d54f9cf2ed69417d71390e29cd)
+        ;
+
+        
+    
+    
+            var circle_marker_154168204225b3b2107c12ab1531bb3e = L.circleMarker(
+                [38.8960981035311, -77.01664123934285],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_efae75e2ab7b21af58371ba84aec31ba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_00e2e1c6f6e5dcae4723113c33e40b95 = $(`<div id="html_00e2e1c6f6e5dcae4723113c33e40b95" style="width: 100.0%; height: 100.0%;"><strong>Judiciary Square</strong><br><a href='https://www.wmata.com/rider-guide/stations/judiciary-sq.cfm'>Station Info</a></div>`)[0];
+                popup_efae75e2ab7b21af58371ba84aec31ba.setContent(html_00e2e1c6f6e5dcae4723113c33e40b95);
+            
+        
+
+        circle_marker_154168204225b3b2107c12ab1531bb3e.bindPopup(popup_efae75e2ab7b21af58371ba84aec31ba)
+        ;
+
+        
+    
+    
+            var circle_marker_a855a211d83834b3911c2d6cf1fb69fa = L.circleMarker(
+                [38.88507028499647, -77.0051416983916],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_d2b6d9b65e23140e0023744c56751d67 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c2dd4bc50fbb771b6878fbfe6f6203e0 = $(`<div id="html_c2dd4bc50fbb771b6878fbfe6f6203e0" style="width: 100.0%; height: 100.0%;"><strong>Capitol South</strong><br><a href='https://www.wmata.com/rider-guide/stations/capitol-south.cfm'>Station Info</a></div>`)[0];
+                popup_d2b6d9b65e23140e0023744c56751d67.setContent(html_c2dd4bc50fbb771b6878fbfe6f6203e0);
+            
+        
+
+        circle_marker_a855a211d83834b3911c2d6cf1fb69fa.bindPopup(popup_d2b6d9b65e23140e0023744c56751d67)
+        ;
+
+        
+    
+    
+            var circle_marker_10dae60b6b21cfd32e1cf44eda2a2591 = L.circleMarker(
+                [38.89832225910372, -77.02808028359519],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_64a564112c14f38d535ee9fd384b2c11 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e7ddfa42424c4ee559edbc5892e76115 = $(`<div id="html_e7ddfa42424c4ee559edbc5892e76115" style="width: 100.0%; height: 100.0%;"><strong>Metro Center</strong><br><a href='https://www.wmata.com/rider-guide/stations/metro-center.cfm'>Station Info</a></div>`)[0];
+                popup_64a564112c14f38d535ee9fd384b2c11.setContent(html_e7ddfa42424c4ee559edbc5892e76115);
+            
+        
+
+        circle_marker_10dae60b6b21cfd32e1cf44eda2a2591.bindPopup(popup_64a564112c14f38d535ee9fd384b2c11)
+        ;
+
+        
+    
+    
+            var circle_marker_d532712f085d119fbdb7d915be07cd2b = L.circleMarker(
+                [38.89832459591712, -77.02191767491948],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_6437f425f72104e795569cf26c1555b8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7e708272746ca79b1d747e7e76115685 = $(`<div id="html_7e708272746ca79b1d747e7e76115685" style="width: 100.0%; height: 100.0%;"><strong>Gallery Pl-Chinatown</strong><br><a href='https://www.wmata.com/rider-guide/stations/gallery-place.cfm'>Station Info</a></div>`)[0];
+                popup_6437f425f72104e795569cf26c1555b8.setContent(html_7e708272746ca79b1d747e7e76115685);
+            
+        
+
+        circle_marker_d532712f085d119fbdb7d915be07cd2b.bindPopup(popup_6437f425f72104e795569cf26c1555b8)
+        ;
+
+        
+    
+    
+            var circle_marker_d4d0c04c0fdaf3fcf1aa5e249900d283 = L.circleMarker(
+                [38.90644460270957, -77.02191666537722],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_f2fe719ed5436b31cddaa5c809ba6dc0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9b39b7cf1e7aec7b82a8c9416b7eec34 = $(`<div id="html_9b39b7cf1e7aec7b82a8c9416b7eec34" style="width: 100.0%; height: 100.0%;"><strong>Mt Vernon Sq 7th St-Convention Center</strong><br><a href='https://www.wmata.com/rider-guide/stations/mt-vernon-sq.cfm'>Station Info</a></div>`)[0];
+                popup_f2fe719ed5436b31cddaa5c809ba6dc0.setContent(html_9b39b7cf1e7aec7b82a8c9416b7eec34);
+            
+        
+
+        circle_marker_d4d0c04c0fdaf3fcf1aa5e249900d283.bindPopup(popup_f2fe719ed5436b31cddaa5c809ba6dc0)
+        ;
+
+        
+    
+    
+            var circle_marker_49ee19f7bc469846f5bf49516b9f54c3 = L.circleMarker(
+                [38.91701018892413, -77.02749818032264],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_ec59f42a53a718ea47fb64c2d4f4f5e1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f8e04ec2d7a15488e69dcd04eed14a72 = $(`<div id="html_f8e04ec2d7a15488e69dcd04eed14a72" style="width: 100.0%; height: 100.0%;"><strong>U Street/African-Amer Civil War Memorial/Cardozo</strong><br><a href='https://www.wmata.com/rider-guide/stations/u-street.cfm'>Station Info</a></div>`)[0];
+                popup_ec59f42a53a718ea47fb64c2d4f4f5e1.setContent(html_f8e04ec2d7a15488e69dcd04eed14a72);
+            
+        
+
+        circle_marker_49ee19f7bc469846f5bf49516b9f54c3.bindPopup(popup_ec59f42a53a718ea47fb64c2d4f4f5e1)
+        ;
+
+        
+    
+    
+            var circle_marker_700006343a17e16e039815f83f57e248 = L.circleMarker(
+                [38.89777382578452, -77.00741657214631],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_66c3d5dd2b6170d25444dcb54c7d2cf6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a837602b9a9830f9a7bf36ecfcdb1361 = $(`<div id="html_a837602b9a9830f9a7bf36ecfcdb1361" style="width: 100.0%; height: 100.0%;"><strong>Union Station</strong><br><a href='https://www.wmata.com/rider-guide/stations/union-station.cfm'>Station Info</a></div>`)[0];
+                popup_66c3d5dd2b6170d25444dcb54c7d2cf6.setContent(html_a837602b9a9830f9a7bf36ecfcdb1361);
+            
+        
+
+        circle_marker_700006343a17e16e039815f83f57e248.bindPopup(popup_66c3d5dd2b6170d25444dcb54c7d2cf6)
+        ;
+
+        
+    
+    
+            var circle_marker_2a60d6daaa1546ea47bf8c9f2fd9d8c5 = L.circleMarker(
+                [38.84566547961086, -76.98851420349799],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_614adaaa3ff7ce5a3fca4e0c424fa2ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2282140ae9179131d18d4072d6fafab8 = $(`<div id="html_2282140ae9179131d18d4072d6fafab8" style="width: 100.0%; height: 100.0%;"><strong>Congress Heights</strong><br><a href='https://www.wmata.com/rider-guide/stations/congress-hghts.cfm'>Station Info</a></div>`)[0];
+                popup_614adaaa3ff7ce5a3fca4e0c424fa2ec.setContent(html_2282140ae9179131d18d4072d6fafab8);
+            
+        
+
+        circle_marker_2a60d6daaa1546ea47bf8c9f2fd9d8c5.bindPopup(popup_614adaaa3ff7ce5a3fca4e0c424fa2ec)
+        ;
+
+        
+    
+    
+            var circle_marker_ef7a23db31de2e047b50fe82e4fc5aa9 = L.circleMarker(
+                [38.851309162659206, -76.9562649706452],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_fd5257a4c7b1367989cb399798b4a7fe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_22f7cfea839befdb207efc01ad1b6ee6 = $(`<div id="html_22f7cfea839befdb207efc01ad1b6ee6" style="width: 100.0%; height: 100.0%;"><strong>Naylor Road</strong><br><a href='https://www.wmata.com/rider-guide/stations/naylor-rd.cfm'>Station Info</a></div>`)[0];
+                popup_fd5257a4c7b1367989cb399798b4a7fe.setContent(html_22f7cfea839befdb207efc01ad1b6ee6);
+            
+        
+
+        circle_marker_ef7a23db31de2e047b50fe82e4fc5aa9.bindPopup(popup_fd5257a4c7b1367989cb399798b4a7fe)
+        ;
+
+        
+    
+    
+            var circle_marker_ac65c523e0f26898807da300f6c672e4 = L.circleMarker(
+                [38.84397233291179, -76.93187241210394],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_f2dbe193252985d1075d116c060792dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_469bba1e27af24f4e4765ae066e09141 = $(`<div id="html_469bba1e27af24f4e4765ae066e09141" style="width: 100.0%; height: 100.0%;"><strong>Suitland</strong><br><a href='https://www.wmata.com/rider-guide/stations/suitland.cfm'>Station Info</a></div>`)[0];
+                popup_f2dbe193252985d1075d116c060792dd.setContent(html_469bba1e27af24f4e4765ae066e09141);
+            
+        
+
+        circle_marker_ac65c523e0f26898807da300f6c672e4.bindPopup(popup_f2dbe193252985d1075d116c060792dd)
+        ;
+
+        
+    
+    
+            var circle_marker_7b947b8faebce608bf4fcf2e7298eb1e = L.circleMarker(
+                [38.88363291144645, -77.22716301958482],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_cacc71a4c442b82509df9abc5e1d0974 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_547354709de37521f83b023f7d99648e = $(`<div id="html_547354709de37521f83b023f7d99648e" style="width: 100.0%; height: 100.0%;"><strong>Dunn Loring-Merrifield</strong><br><a href='https://www.wmata.com/rider-guide/stations/dunn-loring.cfm'>Station Info</a></div>`)[0];
+                popup_cacc71a4c442b82509df9abc5e1d0974.setContent(html_547354709de37521f83b023f7d99648e);
+            
+        
+
+        circle_marker_7b947b8faebce608bf4fcf2e7298eb1e.bindPopup(popup_cacc71a4c442b82509df9abc5e1d0974)
+        ;
+
+        
+    
+    
+            var circle_marker_2e8747843e359e9d2b7f84ff61fd0bd8 = L.circleMarker(
+                [38.87760889642973, -77.27262461816473],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_8c897c019eb527781231b112c1e17392 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c9425b1ea3ab5f578ef0d6f3e709a43a = $(`<div id="html_c9425b1ea3ab5f578ef0d6f3e709a43a" style="width: 100.0%; height: 100.0%;"><strong>Vienna/Fairfax-GMU</strong><br><a href='https://www.wmata.com/rider-guide/stations/vienna.cfm'>Station Info</a></div>`)[0];
+                popup_8c897c019eb527781231b112c1e17392.setContent(html_c9425b1ea3ab5f578ef0d6f3e709a43a);
+            
+        
+
+        circle_marker_2e8747843e359e9d2b7f84ff61fd0bd8.bindPopup(popup_8c897c019eb527781231b112c1e17392)
+        ;
+
+        
+    
+    
+            var circle_marker_3759435e41b773ed0465cd267ec54494 = L.circleMarker(
+                [38.95949166976637, -77.08499811291914],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_d6052f8074938e932e6b4f8cee09083f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_686029f7379265ae4774cdab9de8dada = $(`<div id="html_686029f7379265ae4774cdab9de8dada" style="width: 100.0%; height: 100.0%;"><strong>Friendship Heights</strong><br><a href='https://www.wmata.com/rider-guide/stations/friendship-hghts.cfm'>Station Info</a></div>`)[0];
+                popup_d6052f8074938e932e6b4f8cee09083f.setContent(html_686029f7379265ae4774cdab9de8dada);
+            
+        
+
+        circle_marker_3759435e41b773ed0465cd267ec54494.bindPopup(popup_d6052f8074938e932e6b4f8cee09083f)
+        ;
+
+        
+    
+    
+            var circle_marker_03e4d04685fcee04332d8ca8514a4614 = L.circleMarker(
+                [38.86189016412418, -77.05954121553258],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_18adf6eb631d12c0f14e183c6148093e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1deaf2104c00fb5466ef43a6c9d56e03 = $(`<div id="html_1deaf2104c00fb5466ef43a6c9d56e03" style="width: 100.0%; height: 100.0%;"><strong>Pentagon City</strong><br><a href='https://www.wmata.com/rider-guide/stations/pentagon-city.cfm'>Station Info</a></div>`)[0];
+                popup_18adf6eb631d12c0f14e183c6148093e.setContent(html_1deaf2104c00fb5466ef43a6c9d56e03);
+            
+        
+
+        circle_marker_03e4d04685fcee04332d8ca8514a4614.bindPopup(popup_18adf6eb631d12c0f14e183c6148093e)
+        ;
+
+        
+    
+    
+            var circle_marker_1f78ef998b4413a66e4e6321120e9716 = L.circleMarker(
+                [38.89318865670786, -77.02813428452357],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_d4f61a56fa8916cd4616b78c11e600ba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d3cc358b9c8b33e28ec45495ba51ef35 = $(`<div id="html_d3cc358b9c8b33e28ec45495ba51ef35" style="width: 100.0%; height: 100.0%;"><strong>Federal Triangle</strong><br><a href='https://www.wmata.com/rider-guide/stations/federal-triangle.cfm'>Station Info</a></div>`)[0];
+                popup_d4f61a56fa8916cd4616b78c11e600ba.setContent(html_d3cc358b9c8b33e28ec45495ba51ef35);
+            
+        
+
+        circle_marker_1f78ef998b4413a66e4e6321120e9716.bindPopup(popup_d4f61a56fa8916cd4616b78c11e600ba)
+        ;
+
+        
+    
+    
+            var circle_marker_9585206b8598fbbdbce45fdb49436d34 = L.circleMarker(
+                [38.95277578843207, -77.36018739937013],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_2e0523882a0982fde1e59e7ae5fd6820 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3b9cf33a66797e9245954dc0f1ccb7fe = $(`<div id="html_3b9cf33a66797e9245954dc0f1ccb7fe" style="width: 100.0%; height: 100.0%;"><strong>Reston Town Center</strong><br><a href='https://www.wmata.com/rider-guide/stations/reston.cfm'>Station Info</a></div>`)[0];
+                popup_2e0523882a0982fde1e59e7ae5fd6820.setContent(html_3b9cf33a66797e9245954dc0f1ccb7fe);
+            
+        
+
+        circle_marker_9585206b8598fbbdbce45fdb49436d34.bindPopup(popup_2e0523882a0982fde1e59e7ae5fd6820)
+        ;
+
+        
+    
+    
+            var circle_marker_33d9e769e1ce507e8dd0b89b32a94f84 = L.circleMarker(
+                [38.95282878221893, -77.38518040938123],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_8015d3742202446735edffc6d23c03db = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f09dbb726471db1f1d720306dbe736a5 = $(`<div id="html_f09dbb726471db1f1d720306dbe736a5" style="width: 100.0%; height: 100.0%;"><strong>Herndon</strong><br><a href='https://www.wmata.com/rider-guide/stations/herndon.cfm'>Station Info</a></div>`)[0];
+                popup_8015d3742202446735edffc6d23c03db.setContent(html_f09dbb726471db1f1d720306dbe736a5);
+            
+        
+
+        circle_marker_33d9e769e1ce507e8dd0b89b32a94f84.bindPopup(popup_8015d3742202446735edffc6d23c03db)
+        ;
+
+        
+    
+    
+            var circle_marker_7c4f0d4453e15d184ae2ad8bd14b59ef = L.circleMarker(
+                [38.960765780680454, -77.41529741726589],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_0b7baf9429042f44ed9b5e7e60e2dc21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7fb4fd080dc1c3eab434e332a5bad2dd = $(`<div id="html_7fb4fd080dc1c3eab434e332a5bad2dd" style="width: 100.0%; height: 100.0%;"><strong>Innovation Center</strong><br><a href='https://www.wmata.com/rider-guide/stations/innovation-center.cfm'>Station Info</a></div>`)[0];
+                popup_0b7baf9429042f44ed9b5e7e60e2dc21.setContent(html_7fb4fd080dc1c3eab434e332a5bad2dd);
+            
+        
+
+        circle_marker_7c4f0d4453e15d184ae2ad8bd14b59ef.bindPopup(popup_0b7baf9429042f44ed9b5e7e60e2dc21)
+        ;
+
+        
+    
+    
+            var circle_marker_f233e5c835dd2df00f056d321d2ea628 = L.circleMarker(
+                [38.95579178330631, -77.44815043095572],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_0a9fd22cc55c23b51964d56decc307e1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_582b95547c70561963ccae45051ebc67 = $(`<div id="html_582b95547c70561963ccae45051ebc67" style="width: 100.0%; height: 100.0%;"><strong>Washington Dulles International Airport</strong><br><a href='https://www.wmata.com/rider-guide/stations/washington-dulles.cfm'>Station Info</a></div>`)[0];
+                popup_0a9fd22cc55c23b51964d56decc307e1.setContent(html_582b95547c70561963ccae45051ebc67);
+            
+        
+
+        circle_marker_f233e5c835dd2df00f056d321d2ea628.bindPopup(popup_0a9fd22cc55c23b51964d56decc307e1)
+        ;
+
+        
+    
+    
+            var circle_marker_c9ec7d22cba3f95400d0717395bb4fbd = L.circleMarker(
+                [38.99204778811289, -77.46068743533155],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_a4fa799396b91f1d60e9c7cea432f992 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_257201e0852ea7f270f7749dc42ff2c6 = $(`<div id="html_257201e0852ea7f270f7749dc42ff2c6" style="width: 100.0%; height: 100.0%;"><strong>Loudoun Gateway</strong><br><a href='https://www.wmata.com/rider-guide/stations/loudoun.cfm'>Station Info</a></div>`)[0];
+                popup_a4fa799396b91f1d60e9c7cea432f992.setContent(html_257201e0852ea7f270f7749dc42ff2c6);
+            
+        
+
+        circle_marker_c9ec7d22cba3f95400d0717395bb4fbd.bindPopup(popup_a4fa799396b91f1d60e9c7cea432f992)
+        ;
+
+        
+    
+    
+            var circle_marker_7bf45e55f311abefe57ed81042f635e0 = L.circleMarker(
+                [39.00529079281844, -77.49153943827612],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_853c36b80272305e216c2aed322d3819 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b37aa64351e460e75440564d152ebc16 = $(`<div id="html_b37aa64351e460e75440564d152ebc16" style="width: 100.0%; height: 100.0%;"><strong>Ashburn</strong><br><a href='https://www.wmata.com/rider-guide/stations/ashburn.cfm'>Station Info</a></div>`)[0];
+                popup_853c36b80272305e216c2aed322d3819.setContent(html_b37aa64351e460e75440564d152ebc16);
+            
+        
+
+        circle_marker_7bf45e55f311abefe57ed81042f635e0.bindPopup(popup_853c36b80272305e216c2aed322d3819)
+        ;
+
+        
+    
+    
+            var circle_marker_277019865cae545652a32c6bf42ad539 = L.circleMarker(
+                [38.83401369041139, -77.04640667393114],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+        
+    
+        var popup_dc54915250db64e2e96cfa23ebd59928 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bed8fa1c31a012d25dcdced5ab2db10d = $(`<div id="html_bed8fa1c31a012d25dcdced5ab2db10d" style="width: 100.0%; height: 100.0%;"><strong>Potomac Yard</strong><br><a href='https://www.wmata.com/rider-guide/stations/potomac-yard.cfm'>Station Info</a></div>`)[0];
+                popup_dc54915250db64e2e96cfa23ebd59928.setContent(html_bed8fa1c31a012d25dcdced5ab2db10d);
+            
+        
+
+        circle_marker_277019865cae545652a32c6bf42ad539.bindPopup(popup_dc54915250db64e2e96cfa23ebd59928)
+        ;
+
+        
+    
+    
+    var color_map_8a38674a6fb58be70c634bee23a5f5f3 = {};
+
+    
+    color_map_8a38674a6fb58be70c634bee23a5f5f3.color = d3.scale.threshold()
+              .domain([0.0, 1.1242484969939879, 2.2484969939879758, 3.372745490981964, 4.4969939879759515, 5.62124248496994, 6.745490981963928, 7.869739478957916, 8.993987975951903, 10.118236472945892, 11.24248496993988, 12.366733466933868, 13.490981963927856, 14.615230460921843, 15.739478957915832, 16.86372745490982, 17.987975951903806, 19.112224448897795, 20.236472945891784, 21.360721442885772, 22.48496993987976, 23.609218436873746, 24.733466933867735, 25.857715430861724, 26.981963927855713, 28.106212424849698, 29.230460921843687, 30.354709418837675, 31.478957915831664, 32.60320641282565, 33.72745490981964, 34.85170340681363, 35.97595190380761, 37.100200400801604, 38.22444889779559, 39.34869739478958, 40.47294589178357, 41.59719438877755, 42.721442885771545, 43.84569138276553, 44.96993987975952, 46.09418837675351, 47.21843687374749, 48.342685370741485, 49.46693386773547, 50.591182364729455, 51.71543086172345, 52.83967935871743, 53.963927855711425, 55.08817635270541, 56.212424849699396, 57.33667334669339, 58.46092184368737, 59.585170340681366, 60.70941883767535, 61.833667334669336, 62.95791583166333, 64.08216432865731, 65.2064128256513, 66.33066132264528, 67.45490981963928, 68.57915831663327, 69.70340681362725, 70.82765531062124, 71.95190380761522, 73.07615230460922, 74.20040080160321, 75.3246492985972, 76.44889779559118, 77.57314629258516, 78.69739478957916, 79.82164328657315, 80.94589178356713, 82.07014028056112, 83.1943887775551, 84.3186372745491, 85.44288577154309, 86.56713426853707, 87.69138276553106, 88.81563126252505, 89.93987975951904, 91.06412825651303, 92.18837675350701, 93.312625250501, 94.43687374749499, 95.56112224448898, 96.68537074148297, 97.80961923847696, 98.93386773547094, 100.05811623246493, 101.18236472945891, 102.30661322645291, 103.4308617234469, 104.55511022044088, 105.67935871743487, 106.80360721442885, 107.92785571142285, 109.05210420841684, 110.17635270541082, 111.3006012024048, 112.42484969939879, 113.54909819639279, 114.67334669338678, 115.79759519038076, 116.92184368737475, 118.04609218436873, 119.17034068136273, 120.29458917835672, 121.4188376753507, 122.54308617234469, 123.66733466933867, 124.79158316633267, 125.91583166332666, 127.04008016032064, 128.16432865731463, 129.28857715430863, 130.4128256513026, 131.5370741482966, 132.66132264529057, 133.78557114228457, 134.90981963927857, 136.03406813627254, 137.15831663326654, 138.2825651302605, 139.4068136272545, 140.5310621242485, 141.65531062124248, 142.77955911823648, 143.90380761523045, 145.02805611222445, 146.15230460921845, 147.27655310621242, 148.40080160320642, 149.5250501002004, 150.6492985971944, 151.7735470941884, 152.89779559118236, 154.02204408817636, 155.14629258517033, 156.27054108216433, 157.39478957915833, 158.5190380761523, 159.6432865731463, 160.76753507014027, 161.89178356713427, 163.01603206412827, 164.14028056112224, 165.26452905811624, 166.3887775551102, 167.5130260521042, 168.6372745490982, 169.76152304609218, 170.88577154308618, 172.01002004008015, 173.13426853707415, 174.25851703406815, 175.38276553106212, 176.50701402805612, 177.6312625250501, 178.7555110220441, 179.8797595190381, 181.00400801603206, 182.12825651302606, 183.25250501002003, 184.37675350701403, 185.50100200400803, 186.625250501002, 187.749498997996, 188.87374749498997, 189.99799599198397, 191.12224448897797, 192.24649298597194, 193.37074148296594, 194.4949899799599, 195.6192384769539, 196.7434869739479, 197.86773547094188, 198.99198396793588, 200.11623246492985, 201.24048096192385, 202.36472945891782, 203.48897795591182, 204.61322645290582, 205.7374749498998, 206.8617234468938, 207.98597194388776, 209.11022044088176, 210.23446893787576, 211.35871743486973, 212.48296593186373, 213.6072144288577, 214.7314629258517, 215.8557114228457, 216.97995991983967, 218.10420841683367, 219.22845691382764, 220.35270541082164, 221.47695390781564, 222.6012024048096, 223.7254509018036, 224.84969939879758, 225.97394789579158, 227.09819639278558, 228.22244488977955, 229.34669338677355, 230.47094188376752, 231.59519038076152, 232.71943887775552, 233.8436873747495, 234.9679358717435, 236.09218436873746, 237.21643286573146, 238.34068136272546, 239.46492985971943, 240.58917835671343, 241.7134268537074, 242.8376753507014, 243.9619238476954, 245.08617234468937, 246.21042084168337, 247.33466933867734, 248.45891783567134, 249.58316633266534, 250.7074148296593, 251.8316633266533, 252.95591182364728, 254.08016032064128, 255.20440881763528, 256.32865731462925, 257.4529058116232, 258.57715430861725, 259.7014028056112, 260.8256513026052, 261.9498997995992, 263.0741482965932, 264.19839679358716, 265.32264529058114, 266.44689378757516, 267.57114228456913, 268.6953907815631, 269.81963927855713, 270.9438877755511, 272.0681362725451, 273.1923847695391, 274.3166332665331, 275.44088176352705, 276.565130260521, 277.68937875751504, 278.813627254509, 279.937875751503, 281.062124248497, 282.186372745491, 283.31062124248496, 284.434869739479, 285.55911823647295, 286.6833667334669, 287.8076152304609, 288.9318637274549, 290.0561122244489, 291.18036072144287, 292.3046092184369, 293.42885771543087, 294.55310621242484, 295.67735470941886, 296.80160320641284, 297.9258517034068, 299.0501002004008, 300.1743486973948, 301.2985971943888, 302.42284569138275, 303.5470941883768, 304.67134268537075, 305.7955911823647, 306.91983967935874, 308.0440881763527, 309.1683366733467, 310.29258517034066, 311.4168336673347, 312.54108216432866, 313.6653306613226, 314.78957915831666, 315.9138276553106, 317.0380761523046, 318.1623246492986, 319.2865731462926, 320.41082164328657, 321.53507014028054, 322.65931863727457, 323.78356713426854, 324.9078156312625, 326.03206412825654, 327.1563126252505, 328.2805611222445, 329.40480961923845, 330.5290581162325, 331.65330661322645, 332.7775551102204, 333.90180360721445, 335.0260521042084, 336.1503006012024, 337.2745490981964, 338.3987975951904, 339.52304609218436, 340.64729458917833, 341.77154308617236, 342.89579158316633, 344.0200400801603, 345.1442885771543, 346.2685370741483, 347.39278557114227, 348.5170340681363, 349.64128256513027, 350.76553106212424, 351.8897795591182, 353.01402805611224, 354.1382765531062, 355.2625250501002, 356.3867735470942, 357.5110220440882, 358.63527054108215, 359.7595190380762, 360.88376753507015, 362.0080160320641, 363.1322645290581, 364.2565130260521, 365.3807615230461, 366.50501002004006, 367.6292585170341, 368.75350701402806, 369.87775551102203, 371.00200400801606, 372.12625250501003, 373.250501002004, 374.37474949899797, 375.498997995992, 376.62324649298597, 377.74749498997994, 378.87174348697397, 379.99599198396794, 381.1202404809619, 382.24448897795594, 383.3687374749499, 384.4929859719439, 385.61723446893785, 386.7414829659319, 387.86573146292585, 388.9899799599198, 390.11422845691385, 391.2384769539078, 392.3627254509018, 393.4869739478958, 394.6112224448898, 395.73547094188376, 396.85971943887773, 397.98396793587176, 399.10821643286573, 400.2324649298597, 401.35671342685373, 402.4809619238477, 403.6052104208417, 404.72945891783564, 405.85370741482967, 406.97795591182364, 408.1022044088176, 409.22645290581164, 410.3507014028056, 411.4749498997996, 412.5991983967936, 413.7234468937876, 414.84769539078155, 415.9719438877755, 417.09619238476955, 418.2204408817635, 419.3446893787575, 420.4689378757515, 421.5931863727455, 422.71743486973946, 423.8416833667335, 424.96593186372746, 426.09018036072143, 427.2144288577154, 428.33867735470943, 429.4629258517034, 430.5871743486974, 431.7114228456914, 432.8356713426854, 433.95991983967934, 435.0841683366734, 436.20841683366734, 437.3326653306613, 438.4569138276553, 439.5811623246493, 440.7054108216433, 441.82965931863725, 442.9539078156313, 444.07815631262525, 445.2024048096192, 446.32665330661325, 447.4509018036072, 448.5751503006012, 449.69939879759517, 450.8236472945892, 451.94789579158316, 453.07214428857714, 454.19639278557116, 455.32064128256513, 456.4448897795591, 457.56913827655313, 458.6933867735471, 459.8176352705411, 460.94188376753505, 462.0661322645291, 463.19038076152304, 464.314629258517, 465.43887775551104, 466.563126252505, 467.687374749499, 468.811623246493, 469.935871743487, 471.06012024048096, 472.1843687374749, 473.30861723446895, 474.4328657314629, 475.5571142284569, 476.6813627254509, 477.8056112224449, 478.92985971943887, 480.0541082164329, 481.17835671342687, 482.30260521042084, 483.4268537074148, 484.55110220440883, 485.6753507014028, 486.7995991983968, 487.9238476953908, 489.0480961923848, 490.17234468937875, 491.2965931863727, 492.42084168336675, 493.5450901803607, 494.6693386773547, 495.7935871743487, 496.9178356713427, 498.04208416833666, 499.1663326653307, 500.29058116232466, 501.4148296593186, 502.5390781563126, 503.6633266533066, 504.7875751503006, 505.91182364729457, 507.0360721442886, 508.16032064128257, 509.28456913827654, 510.40881763527057, 511.53306613226454, 512.6573146292585, 513.7815631262525, 514.9058116232464, 516.0300601202405, 517.1543086172345, 518.2785571142284, 519.4028056112224, 520.5270541082165, 521.6513026052104, 522.7755511022044, 523.8997995991984, 525.0240480961924, 526.1482965931864, 527.2725450901804, 528.3967935871743, 529.5210420841684, 530.6452905811623, 531.7695390781563, 532.8937875751503, 534.0180360721442, 535.1422845691383, 536.2665330661323, 537.3907815631262, 538.5150300601202, 539.6392785571143, 540.7635270541082, 541.8877755511022, 543.0120240480962, 544.1362725450902, 545.2605210420842, 546.3847695390782, 547.5090180360721, 548.6332665330661, 549.7575150300602, 550.8817635270541, 552.0060120240481, 553.130260521042, 554.2545090180361, 555.3787575150301, 556.503006012024, 557.627254509018, 558.7515030060121, 559.875751503006, 561.0])
+              .range(['#ffffccff', '#ffffccff', '#ffffcbff', '#ffffcaff', '#fffec9ff', '#fffec9ff', '#fffec8ff', '#fffdc7ff', '#fffdc7ff', '#fffdc6ff', '#fffdc5ff', '#fffcc5ff', '#fffcc4ff', '#fffcc3ff', '#fffbc2ff', '#fffbc2ff', '#fffbc1ff', '#fffbc0ff', '#fffac0ff', '#fffabfff', '#fffabeff', '#fff9bdff', '#fff9bdff', '#fff9bcff', '#fff9bbff', '#fff8bbff', '#fff8baff', '#fff8b9ff', '#fff7b8ff', '#fff7b8ff', '#fff7b7ff', '#fff7b6ff', '#fff6b6ff', '#fff6b5ff', '#fff6b4ff', '#fff5b4ff', '#fff5b3ff', '#fff5b2ff', '#fff4b1ff', '#fff4b1ff', '#fff4b0ff', '#fff4afff', '#fff3afff', '#fff3aeff', '#fff3adff', '#fff2acff', '#fff2acff', '#fff2abff', '#fff2aaff', '#fff1aaff', '#fff1a9ff', '#fff1a8ff', '#fff0a7ff', '#fff0a7ff', '#fff0a6ff', '#fff0a5ff', '#ffefa5ff', '#ffefa4ff', '#ffefa3ff', '#ffeea3ff', '#ffeea2ff', '#ffeea1ff', '#ffeea0ff', '#ffeda0ff', '#ffed9fff', '#ffed9eff', '#ffec9eff', '#ffec9dff', '#ffec9cff', '#ffeb9cff', '#ffeb9bff', '#ffeb9aff', '#ffea9aff', '#ffea99ff', '#ffea98ff', '#ffe998ff', '#ffe997ff', '#ffe996ff', '#ffe896ff', '#ffe895ff', '#ffe894ff', '#ffe794ff', '#ffe793ff', '#ffe792ff', '#ffe692ff', '#ffe691ff', '#ffe690ff', '#ffe68fff', '#ffe58fff', '#ffe58eff', '#ffe58dff', '#ffe48dff', '#ffe48cff', '#ffe48bff', '#ffe38bff', '#ffe38aff', '#ffe389ff', '#ffe289ff', '#ffe288ff', '#ffe287ff', '#ffe187ff', '#ffe186ff', '#ffe185ff', '#ffe085ff', '#ffe084ff', '#ffe083ff', '#ffdf83ff', '#ffdf82ff', '#ffdf81ff', '#ffde81ff', '#ffde80ff', '#ffde7fff', '#ffdd7fff', '#ffdd7eff', '#ffdd7dff', '#ffdc7dff', '#ffdc7cff', '#ffdc7bff', '#ffdc7bff', '#ffdb7aff', '#ffdb79ff', '#ffdb78ff', '#ffda78ff', '#ffda77ff', '#ffda76ff', '#fed976ff', '#fed975ff', '#fed874ff', '#fed774ff', '#fed773ff', '#fed672ff', '#fed572ff', '#fed571ff', '#fed470ff', '#fed470ff', '#fed36fff', '#fed26eff', '#fed26eff', '#fed16dff', '#fed06cff', '#fed06cff', '#fecf6bff', '#fecf6aff', '#fece6aff', '#fecd69ff', '#fecd68ff', '#fecc68ff', '#fecb67ff', '#fecb66ff', '#feca66ff', '#feca65ff', '#fec964ff', '#fec864ff', '#fec863ff', '#fec762ff', '#fec662ff', '#fec661ff', '#fec560ff', '#fec45fff', '#fec45fff', '#fec35eff', '#fec35dff', '#fec25dff', '#fec15cff', '#fec15bff', '#fec05bff', '#febf5aff', '#febf59ff', '#febe59ff', '#febe58ff', '#febd57ff', '#febc57ff', '#febc56ff', '#febb55ff', '#feba55ff', '#feba54ff', '#feb953ff', '#feb953ff', '#feb852ff', '#feb751ff', '#feb751ff', '#feb650ff', '#feb54fff', '#feb54fff', '#feb44eff', '#feb44dff', '#feb34dff', '#feb24cff', '#feb24cff', '#feb14bff', '#feb04bff', '#feb04bff', '#feaf4bff', '#feaf4aff', '#feae4aff', '#feae4aff', '#fead4aff', '#feac49ff', '#feac49ff', '#feab49ff', '#feab48ff', '#feaa48ff', '#fea948ff', '#fea948ff', '#fea847ff', '#fea847ff', '#fea747ff', '#fea647ff', '#fea646ff', '#fea546ff', '#fea546ff', '#fea446ff', '#fea345ff', '#fea345ff', '#fea245ff', '#fea245ff', '#fea144ff', '#fea044ff', '#fea044ff', '#fe9f44ff', '#fe9f43ff', '#fe9e43ff', '#fe9d43ff', '#fe9d43ff', '#fe9c42ff', '#fe9c42ff', '#fe9b42ff', '#fe9a42ff', '#fe9a41ff', '#fe9941ff', '#fe9941ff', '#fe9840ff', '#fe9740ff', '#fe9740ff', '#fe9640ff', '#fe963fff', '#fe953fff', '#fe943fff', '#fe943fff', '#fe933eff', '#fe933eff', '#fe923eff', '#fe923eff', '#fe913dff', '#fe903dff', '#fe903dff', '#fe8f3dff', '#fe8f3cff', '#fe8e3cff', '#fe8d3cff', '#fd8d3cff', '#fd8c3bff', '#fd8b3bff', '#fd8a3bff', '#fd883aff', '#fd873aff', '#fd863aff', '#fd853aff', '#fd8439ff', '#fd8339ff', '#fd8239ff', '#fd8138ff', '#fd8038ff', '#fd7f38ff', '#fd7e38ff', '#fd7d37ff', '#fd7c37ff', '#fd7b37ff', '#fd7a36ff', '#fd7936ff', '#fd7836ff', '#fd7736ff', '#fd7635ff', '#fd7535ff', '#fd7435ff', '#fd7334ff', '#fd7234ff', '#fd7134ff', '#fd7033ff', '#fd6f33ff', '#fd6e33ff', '#fd6d33ff', '#fd6c32ff', '#fd6b32ff', '#fd6a32ff', '#fd6931ff', '#fd6831ff', '#fd6731ff', '#fd6631ff', '#fd6530ff', '#fd6430ff', '#fd6330ff', '#fd622fff', '#fd612fff', '#fd602fff', '#fd5f2fff', '#fd5e2eff', '#fd5d2eff', '#fd5c2eff', '#fd5b2dff', '#fd5a2dff', '#fd592dff', '#fd582dff', '#fd572cff', '#fd562cff', '#fd552cff', '#fd542bff', '#fd532bff', '#fd522bff', '#fd512aff', '#fd502aff', '#fd4f2aff', '#fc4e2aff', '#fc4d29ff', '#fc4c29ff', '#fb4b29ff', '#fb4a29ff', '#fa4a29ff', '#fa4928ff', '#fa4828ff', '#f94728ff', '#f94628ff', '#f84527ff', '#f84427ff', '#f84427ff', '#f74327ff', '#f74226ff', '#f64126ff', '#f64026ff', '#f63f26ff', '#f53f26ff', '#f53e25ff', '#f43d25ff', '#f43c25ff', '#f43b25ff', '#f33a24ff', '#f33a24ff', '#f23924ff', '#f23824ff', '#f23724ff', '#f13623ff', '#f13523ff', '#f03523ff', '#f03423ff', '#f03322ff', '#ef3222ff', '#ef3122ff', '#ee3022ff', '#ee3022ff', '#ee2f21ff', '#ed2e21ff', '#ed2d21ff', '#ec2c21ff', '#ec2b20ff', '#ec2b20ff', '#eb2a20ff', '#eb2920ff', '#ea281fff', '#ea271fff', '#ea261fff', '#e9261fff', '#e9251fff', '#e8241eff', '#e8231eff', '#e8221eff', '#e7211eff', '#e7211dff', '#e6201dff', '#e61f1dff', '#e61e1dff', '#e51d1dff', '#e51c1cff', '#e41b1cff', '#e41b1cff', '#e31a1cff', '#e3191cff', '#e2191cff', '#e2181cff', '#e1181cff', '#e0181cff', '#e0171dff', '#df171dff', '#df161dff', '#de161dff', '#dd161dff', '#dd151dff', '#dc151eff', '#dc141eff', '#db141eff', '#da131eff', '#da131eff', '#d9131eff', '#d9121eff', '#d8121fff', '#d7111fff', '#d7111fff', '#d6111fff', '#d5101fff', '#d5101fff', '#d40f20ff', '#d40f20ff', '#d30e20ff', '#d20e20ff', '#d20e20ff', '#d10d20ff', '#d10d21ff', '#d00c21ff', '#cf0c21ff', '#cf0b21ff', '#ce0b21ff', '#ce0b21ff', '#cd0a22ff', '#cc0a22ff', '#cc0922ff', '#cb0922ff', '#ca0922ff', '#ca0822ff', '#c90822ff', '#c90723ff', '#c80723ff', '#c70623ff', '#c70623ff', '#c60623ff', '#c60523ff', '#c50524ff', '#c40424ff', '#c40424ff', '#c30424ff', '#c30324ff', '#c20324ff', '#c10225ff', '#c10225ff', '#c00125ff', '#bf0125ff', '#bf0125ff', '#be0025ff', '#be0026ff', '#bd0026ff', '#bc0026ff', '#bb0026ff', '#ba0026ff', '#b90026ff', '#b80026ff', '#b70026ff', '#b60026ff', '#b50026ff', '#b40026ff', '#b30026ff', '#b20026ff', '#b10026ff', '#b00026ff', '#af0026ff', '#ae0026ff', '#ad0026ff', '#ac0026ff', '#ab0026ff', '#aa0026ff', '#a90026ff', '#a80026ff', '#a70026ff', '#a60026ff', '#a50026ff', '#a40026ff', '#a30026ff', '#a20026ff', '#a10026ff', '#a00026ff', '#9f0026ff', '#9e0026ff', '#9d0026ff', '#9c0026ff', '#9b0026ff', '#9b0026ff', '#9a0026ff', '#990026ff', '#980026ff', '#970026ff', '#960026ff', '#950026ff', '#940026ff', '#930026ff', '#920026ff', '#910026ff', '#900026ff', '#8f0026ff', '#8e0026ff', '#8d0026ff', '#8c0026ff', '#8b0026ff', '#8a0026ff', '#890026ff', '#880026ff', '#870026ff', '#860026ff', '#850026ff', '#840026ff', '#830026ff', '#820026ff', '#810026ff', '#800026ff']);
+    
+
+    color_map_8a38674a6fb58be70c634bee23a5f5f3.x = d3.scale.linear()
+              .domain([0.0, 561.0])
+              .range([0, 450 - 50]);
+
+    color_map_8a38674a6fb58be70c634bee23a5f5f3.legend = L.control({position: 'topright'});
+    color_map_8a38674a6fb58be70c634bee23a5f5f3.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_8a38674a6fb58be70c634bee23a5f5f3.legend.addTo(map_ff0103dce37df9678dac5f1c65fbeb23);
+
+    color_map_8a38674a6fb58be70c634bee23a5f5f3.xAxis = d3.svg.axis()
+        .scale(color_map_8a38674a6fb58be70c634bee23a5f5f3.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 70.125, 140.25, 210.375, 280.5, 350.625, 420.75, 490.875, 561.0]);
+
+    color_map_8a38674a6fb58be70c634bee23a5f5f3.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_8a38674a6fb58be70c634bee23a5f5f3.g = color_map_8a38674a6fb58be70c634bee23a5f5f3.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_8a38674a6fb58be70c634bee23a5f5f3.g.selectAll("rect")
+        .data(color_map_8a38674a6fb58be70c634bee23a5f5f3.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_8a38674a6fb58be70c634bee23a5f5f3.x(color_map_8a38674a6fb58be70c634bee23a5f5f3.color.domain()[i - 1]) : color_map_8a38674a6fb58be70c634bee23a5f5f3.x.range()[0],
+            x1: i < color_map_8a38674a6fb58be70c634bee23a5f5f3.color.domain().length ? color_map_8a38674a6fb58be70c634bee23a5f5f3.x(color_map_8a38674a6fb58be70c634bee23a5f5f3.color.domain()[i]) : color_map_8a38674a6fb58be70c634bee23a5f5f3.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_8a38674a6fb58be70c634bee23a5f5f3.g.call(color_map_8a38674a6fb58be70c634bee23a5f5f3.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("Bike Route Frequency");
+</script>
+</html>
