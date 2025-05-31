@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://images.ctfassets.net/p6ae3zqfb1e3/2l8ZrEyDeCq8F6oBvda0WP/f92c98aa4dd42818ab413f193945777b/CaBi_Homepage_Hero_2x.png?w=2500&q=60&fm=webp" alt="Bikesharing Project Banner" width="800"/>
+</p>
+
 # Bikesharing Project
 
 ## Overview
