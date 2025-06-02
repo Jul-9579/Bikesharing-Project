@@ -75,8 +75,8 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Jul-9579/Project-3.git
-   cd Project-3
+   git clone https://github.com/Jul-9579/Bikesharing-Project.git
+   cd Bikesharing-Project
    ```
 
 2. Create a virtual environment and activate it:
